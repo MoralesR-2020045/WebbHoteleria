@@ -160,7 +160,6 @@
                 </div>
                 <div>
                     <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <button class="btn btn-success" type="button" href="./metodoDePago-servlet">Ver Datos</button>
                 </div>
             </form>
         </div>

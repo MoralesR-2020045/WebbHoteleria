@@ -140,8 +140,8 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formularios</a>
                                 <ul class="dropdown-menu color-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Huï¿½spedes</a></li>
-                                    <li><a class="dropdown-item" href="./metodoDePago-servlet">Lista</a></li>
-                                    <li><a class="dropdown-item" href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" >Mï¿½todo de Pago</a></li>
+                                    <li><a class="dropdown-item" href="./metodoDePago-servlet">Método de Pago</a></li>
+                                    <li><a class="dropdown-item" href="#" >Servicios</a></li>
                                     <li><a class="dropdown-item" href="#">Empleados</a></li>
                                     <li><a class="dropdown-item" href="#">Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>

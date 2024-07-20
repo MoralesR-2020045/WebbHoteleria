@@ -130,11 +130,16 @@
             }
 
             .table-striped tbody tr:nth-child(odd) {
-                background-color: #58b09b !important;
+                background-color: #DDD7D7 !important;
             }
 
             .table-striped tbody tr:nth-child(even) {
-                background-color: #2d8570 !important;
+                background-color: #a3c3b8 !important;
+            }
+
+            .custom-table {
+                width: 80%;
+                margin: auto;
             }
         </style>
     </head>
@@ -175,7 +180,7 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-8.5 mx-auto">
-                    <table class="table table-striped">
+                    <table class="table-striped custom-table">
                         <thead>
                             <tr>
                                 <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;">ID</th>
@@ -191,15 +196,19 @@
                             </c:forEach>
                         </tbody>
                     </table>
+                    <br>
                 </div>
                 <div class="col-md-4 mx-auto text-center">
                     <a href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" class="btn btn-success">
                         Agregar Datos
                     </a>
+                    <br>
                 </div>
+                <br>
             </div>
+            <br>
         </div>
-
+        <br> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

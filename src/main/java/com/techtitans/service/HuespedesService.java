@@ -13,7 +13,7 @@ import java.util.List;
 
 /**
  *
- * @author Jessyca Martinez
+ * @author Marco Bolaños
  */
 
 //Clase Huespedes Servicios

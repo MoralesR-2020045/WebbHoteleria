@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Tuchez
  */
-public interface InterfaceServicio {
+public interface InterfaceServicioService {
     
     public void agregarServicio(Servicio metodo);
     

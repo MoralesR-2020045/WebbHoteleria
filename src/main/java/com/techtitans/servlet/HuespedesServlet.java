@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  *
- * @author Jessyca Martinez
+ * @author Marco Bolaños
  */
 @WebServlet(name = "HuespedesServlet", value = {"/huespedes-servlet"})
 @MultipartConfig

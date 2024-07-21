@@ -15,6 +15,7 @@ import java.util.List;
  *
  * @author Jessyca Martinez
  */
+
 //Clase Huespedes Servicios
 public class HuespedesService implements InterfaceHuespedesService{
     //Variable tipo EntityManager la cual lleva por nombre "em"

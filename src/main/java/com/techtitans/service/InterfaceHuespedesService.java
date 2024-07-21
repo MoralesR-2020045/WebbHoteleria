@@ -11,9 +11,12 @@ import java.util.List;
  *
  * @author Jessyca Martinez
  */
+// Clase Interfaz Huespedes Servicio
 public interface InterfaceHuespedesService {
-    
+
+    //Metodo void agregar huespedes recibe huespedes y la variable la defini como huesped
     public void agregarHuespedes(Huespedes huesped);
-    
+
+    //Un arreglo de tipo lista el cual se llama Huespedes el cual defini como "listaHuespedes"
     public List<Huespedes> listaHuespedes();
 }

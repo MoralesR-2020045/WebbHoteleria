@@ -9,7 +9,7 @@ import java.util.List;
 
 /**
  *
- * @author Jessyca Martinez
+ * @author Marco Bolaños
  */
 // Clase Interfaz Huespedes Servicio
 public interface InterfaceHuespedesService {

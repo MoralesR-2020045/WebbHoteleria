@@ -120,7 +120,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item" href="#">
-                                <a class="nav-link" href="#">Inicio</a>
+                                <img src="Assets/Image/login.png" alt="Imagen" style="height: 50px; width: auto; margin-left: 10px;">
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#eventos">Eventos</a>

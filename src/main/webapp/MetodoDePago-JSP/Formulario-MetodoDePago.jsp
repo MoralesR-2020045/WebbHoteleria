@@ -16,7 +16,12 @@
                 font-size: 4rem;
             }
 
-            body, html {
+            body,
+            html {
+                background-image: url('../Assets/Image/imagenFondo.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 height: 100%;
                 margin: 0;
                 font-family: Glacial Indifference;
@@ -159,7 +164,7 @@
                     <label for="nombreDelMetodo">Nombre del Método de Pago</label>
                 </div>
                 <div>
-                    <input class="btn btn-outline-success" type="submit" value="Agregar">
+                    <input class="btn btn-outline-success" style="background-color: #0F5746; color: #58b09b; width: 150px; height: 50px; font-size: 1.2rem;" type="submit" value="Agregar">
                 </div>
             </form>
         </div>

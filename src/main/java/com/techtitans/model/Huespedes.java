@@ -13,6 +13,7 @@ import jakarta.persistence.Id;
  *
  * @author Marco Bolaños
  */
+
 @Entity
 public class Huespedes {
     @Id

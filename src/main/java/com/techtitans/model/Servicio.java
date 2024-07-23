@@ -16,21 +16,30 @@ import jakarta.persistence.Table;
  */
 @Entity
 public class Servicio {
+    // Se utiliza un identificador que es unico en la clase servicio.
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    // Generamos las variables de la entidad servicio.
     private int idServicio;
     private String nombreServicio;
     private double PrecioServicio;
 
+    // Constructor vacio de la clase servicio.
     public Servicio() {
     }
 
+    // Constructor lleno de la clase servicio.
     public Servicio(int idServicio, String nombreServicio, double PrecioServicio) {
         this.idServicio = idServicio;
         this.nombreServicio = nombreServicio;
         this.PrecioServicio = PrecioServicio;
     }
 
+   /*
+    *
+    * Generamos los getters y setters de la clase servicio que lo que hace es
+    * colocar los datos por medio del set y luego llamarlos con el get.
+    */
     public int getIdServicio() {
         return idServicio;
     }

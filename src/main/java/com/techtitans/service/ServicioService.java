@@ -15,14 +15,27 @@ import java.util.List;
  *
  * @author Tuchez
  */
+
+// En esta clase implementamos la interfaz de servicio y proporciona los metodos creados.
 public class ServicioService implements InterfaceServicioService {
 
+    // creamos una variable privada Entitymanager para importar el JPA y la persistencia.
     private EntityManager em;
 
+
+   /*
+    * Se utilizo un constructor para incializar la variable em y utilizamos 
+    * el metodo get de la clase JPA para establecer la conexion de la base de datos.
+    */
     public ServicioService() {
         em = Jpa.getEntityManager();
     }
 
+   /*
+    * Este metodo almacena el servicio al momento de agregarlo a la base de datos,
+    * e inicia una transaccion y realiza el commit si se agrego el servicio, si
+    * se utiliza la excepcion, se realiza un rollback para no realizar los cambios.
+    */
     @Override
     public void agregarServicio(Servicio metodo) {
         EntityTransaction transction = em.getTransaction();
@@ -37,7 +50,11 @@ public class ServicioService implements InterfaceServicioService {
         e.printStackTrace();
         }
     }
-
+    
+   /*
+    * Este metodo obtiene los datos almacenados y se utiliza JPQL para hacer la
+    * consulta y selecciones los registros de la entidad de Servicio.
+    */
     @Override
     public List<Servicio> listaServicio() {
             TypedQuery<Servicio> query = em.createQuery("SELECT P FROM Servicio p", Servicio.class);

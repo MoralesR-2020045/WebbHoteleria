@@ -13,8 +13,16 @@ import java.util.List;
  */
 public interface InterfaceServicioService {
     
+   /*
+    * Este método nos permite agregar un servicio al sistema e
+    * importamos la clase Servicio para usar este método.
+    */
     public void agregarServicio(Servicio metodo);
     
+   /*
+    * Creamos un metodo que nos permite listar los datos de la clase servicio y
+    * utilizamos un List para almacenar y retornar los datos.
+    */
     public List<Servicio> listaServicio();
     
 }

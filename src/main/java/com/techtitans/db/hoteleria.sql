@@ -1,5 +1,5 @@
 
- -- Drop database if exists DBHoteleria;
+  -- Drop database if exists DBHoteleria;
 Create database DBHoteleria;
 
 Use DBHoteleria;

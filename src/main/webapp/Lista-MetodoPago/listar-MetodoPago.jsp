@@ -186,7 +186,7 @@
                         </table>
                     </div>
                     <div class="col-md-4">
-                        <a href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" class="btn btn-success">
+                        <a href="./Lista-MetodoPago/Formulario-MetodoDePago.jsp" class="btn btn-success">
                             Agregar Datos
                         </a>
                     </div>

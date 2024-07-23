@@ -49,7 +49,7 @@ public class HuespedesServlet extends HttpServlet{
         //Arequest le seteamos Huespedes y la variable metodos
         request.setAttribute("Huespedes", metodos);
         // Sirve para darle ombre a la direccion del listar de la entidad
-        request.getRequestDispatcher("/Lista-Huespedes/listar-Huespedes.jsp").forward(request, response); 
+        request.getRequestDispatcher("/Huespedes-JSP/listar-Huespedes.jsp").forward(request, response); 
     }
     //Metodo void agregarHuespedes recibe como prametros la request y response
     private void agregarHuespedes(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{

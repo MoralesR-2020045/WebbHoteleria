@@ -1,6 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -8,83 +7,66 @@
         <title>Listado de Huéspedes</title>
         <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
         <style>
             .color-titulo {
                 color: #00382b;
                 font-size: 4rem;
             }
-
             body, html {
-                background-color: #DDD7D7;
+                background-image: url('../Assets/Image/imagenFondo.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 height: 100%;
                 margin: 0;
                 font-family: Glacial Indifference;
             }
-
             nav.navbar {
                 background-color: #00382b;
                 border-right: 1px solid #ccc;
             }
-
             .navbar-collapse {
                 padding: 0;
             }
-
             .navbar-nav {
                 list-style-type: none;
                 padding-left: 0;
             }
-
             .navbar-nav li {
                 padding: 10px;
             }
-
             .navbar-nav li a {
                 color: white;
                 text-decoration: none;
             }
-
             .navbar-nav li a:hover {
                 text-decoration: underline;
             }
-
             .dropdown-toggle {
                 background-color: transparent !important;
                 border: none;
             }
-
             .dropdown-toggle img {
                 height: auto;
                 width: 30px;
                 margin-right: 5px;
             }
-
             .color-menu {
                 background-color: #2d8570;
                 color: #2d8570;
             }
-
             .color-menu:hover {
                 background-color: #2d8570;
             }
-
-            .color-titulo {
-                color: #00382b;
-                font-size: 4rem;
-            }
-
             .navbar-nav li a {
                 color: #2d8570;
                 text-decoration: none;
                 transition: color 0.3s ease, font-size 0.2s ease;
                 font-size: 1.2rem;
             }
-
             .navbar-nav li a:hover {
                 color: #58b09b;
             }
-
             .offcanvas {
                 position: fixed;
                 top: 0;
@@ -96,35 +78,41 @@
                 transform: translateX(100%);
                 transition: transform 0.3s ease;
             }
-
             .offcanvas.show {
                 transform: translateX(0);
             }
-
             .offcanvas ul {
                 list-style-type: none;
                 padding: 0;
             }
-
             .offcanvas li {
                 padding: 10px;
             }
-
             .offcanvas a {
                 color: #fff;
                 text-decoration: none;
             }
-
             .offcanvas a:hover {
                 text-decoration: underline;
             }
-
-            .th {
-                background-color: #00382b;
-                color: #58b09b;
+            .th-header {
                 text-align: center;
                 font-size: 1.2rem;
                 padding: 10px;
+            }
+            .table-striped tbody tr:nth-child(odd) {
+                background-color: #DDD7D7 !important;
+            }
+            .table-striped tbody tr:nth-child(even) {
+                background-color: #a3c3b8 !important;
+            }
+            .custom-table {
+                width: 80%;
+                margin: auto;
+                border: 1px solid #00382b;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             }
         </style>
     </head>
@@ -144,14 +132,12 @@
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Id</a></li>
-                        <li><a class="nav-link" href="#">NIT</a></li>
-                        <li><a class="nav-link" href="#">DPI</a></li>
-                        <li><a class="nav-link" href="#">Nombre</a></li>
-                        <li><a class="nav-link" href="#">Apellido</a></li>
-                        <li><a class="nav-link" href="#">Email</a></li>
-                        <li><a class="nav-link" href="#">Teléfono</a></li>
-                        <li><a class="nav-link" href="#">Contraseña</a></li>
+                        <li><a class="nav-link" href="#">Huéspedes</a></li>
+                        <li><a class="nav-link" href="#">Servicios</a></li>
+                        <li><a class="nav-link" href="#">Empleados</a></li>
+                        <li><a class="nav-link" href="#">Habitaciones</a></li>
+                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="#">Reservas</a></li>
                     </ul>
                 </div>
             </div>
@@ -168,7 +154,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" class="color-menu th">Id</th>
+                                <th scope="col" class="color-menu th">ID</th>
                                 <th scope="col" class="color-menu th">NIT</th>
                                 <th scope="col" class="color-menu th">DPI</th>
                                 <th scope="col" class="color-menu th">Nombre</th>
@@ -179,16 +165,16 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <c:forEach var="huespedes" items="${huespedes}">
+                            <c:forEach var="Huespedes" items="${Huespedes}">
                                 <tr>
-                                    <td>${huesped.idHuesped}</td>
-                                    <td>${huesped.nit}</td>
-                                    <td>${huesped.dpi}</td>
-                                    <td>${huesped.nombreDelHuesped}</td>
-                                    <td>${huesped.apellidoDelHuesped}</td>
-                                    <td>${huesped.email}</td>
-                                    <td>${huesped.telefono}</td>
-                                    <td>${huesped.contraseña}</td>
+                                    <td>${Huespedes.idHuesped}</td>
+                                    <td>${Huespedes.nit}</td>
+                                    <td>${Huespedes.dpi}</td>
+                                    <td>${Huespedes.nombreDelHuesped}</td>
+                                    <td>${Huespedes.apellidoDelHuesped}</td>
+                                    <td>${Huespedes.email}</td>
+                                    <td>${Huespedes.telefono}</td>
+                                    <td>${Huespedes.contraseña}</td>
                                 </tr>
                             </c:forEach>
                         </tbody>

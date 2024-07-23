@@ -9,13 +9,18 @@
         <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <style>
-            .color-titulo {
+<style>
+            .color-titulo{
                 color: #00382b;
                 font-size: 4rem;
             }
-            
-            body, html {
+
+            body,
+            html {
+                background-image: url('../Assets/Image/imagenFondo.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 height: 100%;
                 margin: 0;
                 font-family: Glacial Indifference;
@@ -59,13 +64,29 @@
                 margin-right: 5px;
             }
 
-            .color-menu {
+            .color-menu{
                 background-color: #2d8570;
                 color: #2d8570;
             }
 
             .color-menu:hover {
                 background-color: #2d8570;
+            }
+
+            .color-titulo{
+                color: #00382b;
+                font-size: 4rem;
+            }
+
+            .navbar-nav li a {
+                color: #2d8570;
+                text-decoration: none;
+                transition: color 0.3s ease, font-size 0.2s ease;
+                font-size: 1.2rem;
+            }
+
+            .navbar-nav li a:hover {
+                color: #58b09b;
             }
 
             .offcanvas {
@@ -101,7 +122,7 @@
             .offcanvas a:hover {
                 text-decoration: underline;
             }
-        </style>
+        </style>
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg">
@@ -171,7 +192,7 @@
                 </div>
                 <div>
                     <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <button class="btn btn-success" type="button" href="./huespedes-servlet">Ver Datos</button>
+                    <a href="" class="btn btn-success">Ver Datos</a>
                 </div>
             </form>
         </div>

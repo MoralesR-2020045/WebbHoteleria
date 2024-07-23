@@ -1,5 +1,11 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!-- Estas líneas importan las librerías JSTL y configuran la página para que use UTF-8 -->
+
+<!-- 
+    Autor: Brayan Toyom
+    Descripción: Página para agregar huéspedes
+-->
 
 <html>
     <head>
@@ -8,15 +14,14 @@
         <title>Formulario de Huéspedes</title>
         <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-<style>
-            .color-titulo{
+        
+        <!-- El estilo de la página -->
+        <style>
+            .color-titulo {
                 color: #00382b;
                 font-size: 4rem;
             }
-
-            body,
-            html {
+            body, html {
                 background-image: url('../Assets/Image/imagenFondo.png');
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -25,70 +30,52 @@
                 margin: 0;
                 font-family: Glacial Indifference;
             }
-
             nav.navbar {
                 background-color: #00382b;
                 border-right: 1px solid #ccc;
             }
-
             .navbar-collapse {
                 padding: 0;
             }
-
             .navbar-nav {
                 list-style-type: none;
                 padding-left: 0;
             }
-
             .navbar-nav li {
                 padding: 10px;
             }
-
             .navbar-nav li a {
                 color: white;
                 text-decoration: none;
             }
-
             .navbar-nav li a:hover {
                 text-decoration: underline;
             }
-
             .dropdown-toggle {
                 background-color: transparent !important;
                 border: none;
             }
-
             .dropdown-toggle img {
                 height: auto;
                 width: 30px;
                 margin-right: 5px;
             }
-
-            .color-menu{
+            .color-menu {
                 background-color: #2d8570;
                 color: #2d8570;
             }
-
             .color-menu:hover {
                 background-color: #2d8570;
             }
-
-            .color-titulo{
-                color: #00382b;
-                font-size: 4rem;
-            }
-
             .navbar-nav li a {
                 color: #2d8570;
                 text-decoration: none;
                 transition: color 0.3s ease, font-size 0.2s ease;
                 font-size: 1.2rem;
             }
-
             .navbar-nav li a:hover {
                 color: #58b09b;
             }
-
             .offcanvas {
                 position: fixed;
                 top: 0;
@@ -100,31 +87,27 @@
                 transform: translateX(100%);
                 transition: transform 0.3s ease;
             }
-
             .offcanvas.show {
                 transform: translateX(0);
             }
-
             .offcanvas ul {
                 list-style-type: none;
                 padding: 0;
             }
-
             .offcanvas li {
                 padding: 10px;
             }
-
             .offcanvas a {
                 color: #fff;
                 text-decoration: none;
             }
-
             .offcanvas a:hover {
                 text-decoration: underline;
             }
-        </style>
+        </style>
     </head>
-    <body> 
+    <body>
+        <!-- Esta es la barra de navegación -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.jsp">
@@ -133,10 +116,11 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <!-- El contenido del menú -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
                 </div>
+                <!-- Este es el menú desplegable -->
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
                         <li><a class="nav-link" href="#">Huéspedes</a></li>
@@ -149,13 +133,12 @@
                 </div>
             </div>
         </nav>
-        <br>
-        <br>
-        <br>
+        <br><br><br>
+        <!-- Este es el título de la página -->
         <div class="container d-flex justify-content-center">
             <h1 class="display-5 text-center color-titulo">Formulario de Huéspedes</h1>
         </div>
-
+        <!-- Este es el formulario para agregar huéspedes -->
         <div class="container mt-5">
             <form action="../../HotelMaquq/huespedes-servlet" method="POST" enctype="multipart/form-data">
                 <div class="form-floating mb-3">
@@ -195,7 +178,8 @@
                     <a href="" class="btn btn-success">Ver Datos</a>
                 </div>
             </form>
-        </div>
+        </div> 
+        <!-- Estos son los scripts de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,13 +1,22 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> 
+<%@ page contentType="text/html;charset=UTF-8" language="java" %> 
+<!-- Estas líneas importan las librerías JSTL y configuran la página para que use UTF-8 -->
+
+<!-- 
+    Autor: Brayan Toyom
+    Descripción: Página para listar los huéspedes
+-->
+ 
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Listado de Huéspedes</title>
+        <!-- Esta la configuración de la página y enlace de Boostrap -->
         <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <style>
+            /* Este es el estilo de la página */
             .color-titulo {
                 color: #00382b;
                 font-size: 4rem;
@@ -116,11 +125,12 @@
             }
         </style>
     </head>
-
     <body>
+        <!-- Este es el inicio de la barra de la navegación -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.jsp">
+                    <!-- Este es el logo del hotel -->
                     <img src="../Assets/Image/logo.png" alt="Imagen Logo" style="height: 150px; width: 200px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,6 +142,7 @@
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
+                        <!-- Son los datos del menú lateral -->
                         <li><a class="nav-link" href="#">Huéspedes</a></li>
                         <li><a class="nav-link" href="#">Servicios</a></li>
                         <li><a class="nav-link" href="#">Empleados</a></li>
@@ -142,18 +153,22 @@
                 </div>
             </div>
         </nav>
+        <!-- Este es un espacio para separación -->
         <br>
         <br>
         <br>
+        <!-- Este es el título de la página -->
         <div class="container d-flex justify-content-center">
             <h1 class="display-5 text-center color-titulo">Listado de Huéspedes</h1>
         </div>
+        <!-- Tabla de huéspedes -->
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-8">
                     <table class="table">
                         <thead>
                             <tr>
+                                <!-- Estos son los encabezados de la tabla -->
                                 <th scope="col" class="color-menu th">ID</th>
                                 <th scope="col" class="color-menu th">NIT</th>
                                 <th scope="col" class="color-menu th">DPI</th>
@@ -165,6 +180,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Este es un bucle para llenar nuevos datos de Huespedes -->
                             <c:forEach var="Huespedes" items="${Huespedes}">
                                 <tr>
                                     <td>${Huespedes.idHuesped}</td>
@@ -181,11 +197,12 @@
                     </table>
                 </div>
                 <div class="col-md-4">
+                    <!-- Este botón hace dirección a "Formulario-Huespedes" para agregar nuevos datos -->
                     <a href="./Huespedes-JSP/Formulario-Huespedes.jsp" class="btn btn-success">Agregar Datos</a>
                 </div>
             </div>
         </div>
-        
+        <!-- Enlace que envía a los scripts de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

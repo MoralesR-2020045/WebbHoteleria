@@ -35,7 +35,7 @@ public class EmpleadosServlet extends HttpServlet{
         List<Empleados> metodos = empleadosService.listaEmpleados();
         metodos.forEach(p -> System.out.println(p));
         request.setAttribute("Empleados", metodos);
-        request.getRequestDispatcher("/Lista-MetodoPago/listar-MetodoPago.jsp").forward(request, response);
+        request.getRequestDispatcher("/EmpleadosFront/Lista-Empleados.jsp").forward(request, response);
     }
 
     private void agregarEmpleado(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

@@ -1,5 +1,13 @@
 com\techtitans\servlet\MetodoDePagoServlet.class
 com\techtitans\service\MetodoDePagoService.class
+com\techtitans\service\InterfaceHabitacionesService.class
+com\techtitans\servlet\EmpleadosServlet.class
+com\techtitans\service\InterfaceEmpleadosService.class
+com\techtitans\model\Empleados.class
 com\techtitans\model\MetodoDePago.class
 com\techtitans\service\InterfaceMetodoDePagoService.class
+com\techtitans\servlet\HabitacionesServlet.class
+com\techtitans\service\EmpleadosService.class
+com\techtitans\model\Habitaciones.class
+com\techtitans\service\HabitacionesService.class
 com\techtitans\util\Jpa.class

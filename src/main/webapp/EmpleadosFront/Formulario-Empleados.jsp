@@ -9,14 +9,19 @@
         <title>Formulario de Empleados</title>
         <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        
+
         <style>
             .color-titulo{
                 color: #00382b;
                 font-size: 4rem;
             }
 
-            body, html {
+            body,
+            html {
+                background-image: url('../Assets/Image/imagenFondo.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
                 height: 100%;
                 margin: 0;
                 font-family: Glacial Indifference;
@@ -119,7 +124,7 @@
                 text-decoration: underline;
             }
         </style>
-        
+
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg">
@@ -175,4 +180,4 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
-</html>
+</html>            

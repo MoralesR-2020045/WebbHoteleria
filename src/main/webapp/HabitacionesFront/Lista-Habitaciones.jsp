@@ -1,17 +1,19 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
 <html>
+
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Formulario de Empleados</title>
-        <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Habitaciones</title>
+        <link rel="icon" type="image/png" href="Assets/Image/iconoHotel.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+              crossorigin="anonymous">
 
         <style>
-            .color-titulo{
+            .color-titulo {
                 color: #00382b;
                 font-size: 4rem;
             }
@@ -65,7 +67,7 @@
                 margin-right: 5px;
             }
 
-            .color-menu{
+            .color-menu {
                 background-color: #2d8570;
                 color: #2d8570;
             }
@@ -74,7 +76,7 @@
                 background-color: #2d8570;
             }
 
-            .color-titulo{
+            .color-titulo {
                 color: #00382b;
                 font-size: 4rem;
             }
@@ -123,16 +125,42 @@
             .offcanvas a:hover {
                 text-decoration: underline;
             }
+
+            .th-header {
+                text-align: center;
+                font-size: 1.2rem;
+                padding: 10px;
+            }
+
+            .table-striped tbody tr:nth-child(odd) {
+                background-color: #DDD7D7 !important;
+            }
+
+            .table-striped tbody tr:nth-child(even) {
+                background-color: #a3c3b8 !important;
+            }
+
+            .custom-table {
+                width: 80%;
+                margin: auto;
+                border: 1px solid #00382b;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            }
         </style>
 
     </head>
-    <body> 
+
+    <body>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.jsp">
-                    <img src="../Assets/Image/logo.png" alt="Imagen Logo" style="height: 150px; width: 200px">
+                    <img src="<c:url value='/Assets/Image/logo.png' />" alt="Imagen Logo" style="height: 150px; width: 200px">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -155,29 +183,43 @@
         <br>
         <br>
         <div class="container d-flex justify-content-center">
-            <h1 class="display-5 text-center color-titulo">Empleados</h1>
+            <h1 class="display-5 text-center color-titulo">Habitaciones</h1>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="color-menu th">ID</th>
+                                <th scope="col" class="color-menu th">NO. habitacion</th>
+                                <th scope="col" class="color-menu th">Precio por noche</th>
+                                <th scope="col" class="color-menu th">ID Tipo de habitacion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <c:forEach var="Habitaciones" items="${Habitaciones}">
+                                <tr>
+                                    <td>${Habitaciones.idHabitacion}</td>
+                                    <td>${Habitaciones.numeroHabitacion}</td>
+                                    <td>${Habitaciones.PrecioPorNoche}</td>
+                                    <td>${Habitaciones.idTipoDeHabitacion}</td>
+                                </tr>
+                            </c:forEach>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <a href="./HabitacionesFront/Formulario-Habitaciones.jsp" class="btn btn-success">
+                        Agregar Datos
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class="container mt-5">
-            <form action="../../HotelMaquq/empleados-servlet" method="POST" enctype="multipart/form-data">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="nombreEmpleado" name="nombreEmpleado" placeholder="">
-                    <label for="nombreDelMetodo">Nombre del empleado</label>
-                </div>
-                <div class="form-floating mb-4">
-                    <input type="text" class="form-control" id="apellidoEmpleado" name="apellidoEmpleado" placeholder="">
-                    <label for="nombreDelMetodo">Apellidos del empleado</label>
-                </div>
-                <div class="form-floating mb-5">
-                    <input type="text" class="form-control" id="contraseña" name="contraseña" placeholder="">
-                    <label for="nombreDelMetodo">Contraseña del empleado</label>
-                </div>
-                <div>
-                    <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <button class="btn btn-success" type="button" href="./empleados-servlet">Ver Datos</button>
-                </div>
-            </form>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     </body>
-</html>            
+
+</html>

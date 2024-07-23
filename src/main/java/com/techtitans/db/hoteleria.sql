@@ -1,5 +1,5 @@
 
--- Drop database if exists DBHoteleria;
+ -- Drop database if exists DBHoteleria;
 Create database DBHoteleria;
 
 Use DBHoteleria;
@@ -15,6 +15,8 @@ create table Huespedes(
 	contraseña varchar(30) not null,
     primary key PK_Huespedes (idHuesped)
 );
+
+select * from Huespedes;
 
 create table Servicio(
 	idServicio int auto_increment,

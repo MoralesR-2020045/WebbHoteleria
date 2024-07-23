@@ -14,6 +14,8 @@ import jakarta.persistence.Id;
  * @author Carlos Morales
  */
 
+
+
 @Entity
 public class TipoDeHabitacion {
     @Id

@@ -15,6 +15,9 @@ import java.util.List;
  *
  * @author Carlos Morales
  */
+
+
+
 public class TipoDeHabitacionService implements InterfaceTipoDeHabitacionService{
     
     private EntityManager em;

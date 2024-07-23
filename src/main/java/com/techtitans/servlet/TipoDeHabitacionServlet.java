@@ -30,12 +30,15 @@ public class TipoDeHabitacionServlet extends HttpServlet {
         this.tipoDeHabitacionService = new TipoDeHabitacionService();
     }
     
+    
+  
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         List<TipoDeHabitacion> habitaciones = tipoDeHabitacionService.listaTipoDeHabitacion();
         habitaciones.forEach(p -> System.out.println(p));
         request.setAttribute("TipoDeHabitacion", habitaciones);
-        request.getRequestDispatcher("/Lista-TipoDeHabitacion/listar-TipoDeHabitacion.jsp").forward(request, response);
+        request.getRequestDispatcher("/Lista-MetodoPago/listar-TipoDeHabitacion.jsp").forward(request, response);
      }
     
     private void agregarTipoDeHabitacion(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -49,10 +52,11 @@ public class TipoDeHabitacionServlet extends HttpServlet {
         TipoDeHabitacion habitacion = new TipoDeHabitacion(id,nombre,descripcion,capacidad,tamaño,camas,precio);
         tipoDeHabitacionService.agregarTipoDeHabitacion(habitacion);
         
-        response.sendRedirect(request.getContextPath()+"/metodoDePago-servlet");
+        response.sendRedirect(request.getContextPath()+"/tipoDeHabitacion-servlet");
     }
     
-    @Override
+
+   @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String pathInfo = request.getPathInfo();
         if(pathInfo == null || pathInfo.equals("/")){

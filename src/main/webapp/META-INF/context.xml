@@ -8,7 +8,7 @@
     maxWaitMillis="10000"
     name="jdbc/DBHoteleria"
     username="root"
-    password="admin15"
+    password="admin"
     type="javax.sql.DataSource"
     url="jdbc:mysql://localhost:3306/DBHoteleria?serverTimezone=GMT-6"
     

@@ -1,5 +1,5 @@
-com\techtitans\service\InterfaceMetodoDePagoService.class
 com\techtitans\servlet\MetodoDePagoServlet.class
-com\techtitans\util\Jpa.class
 com\techtitans\service\MetodoDePagoService.class
 com\techtitans\model\MetodoDePago.class
+com\techtitans\service\InterfaceMetodoDePagoService.class
+com\techtitans\util\Jpa.class

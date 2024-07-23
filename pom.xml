@@ -70,7 +70,7 @@
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
                     <username>root</username>
-                    <password>1</password>
+                    <password>admin</password>
                 </configuration>
             </plugin>
         </plugins>

@@ -1,5 +1,6 @@
 
 -- Drop database if exists DBHoteleria;
+
 Create database DBHoteleria;
 
 Use DBHoteleria;
@@ -39,6 +40,8 @@ create table Empleados(
     primary key PK_Empleados (idEmpleado)
 );
 
+select * from Empleados;
+
 create table TipoDeHabitacion(
 	idTipoDeHabitacion int auto_increment,
 	nombreTipoDeHabitacion varchar(60) not null, 
@@ -59,6 +62,8 @@ create table Habitaciones(
     constraint FK_Habitaciones_TipoDeHabitaciones
     foreign key (idTipoDeHabitacion) references TipoDeHabitacion(idTipoDeHabitacion)
 );
+
+select * from Habitaciones;
 
 create table Reservaciones(
 	idReserva int auto_increment, 

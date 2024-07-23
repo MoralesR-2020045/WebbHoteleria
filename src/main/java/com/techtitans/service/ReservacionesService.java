@@ -43,7 +43,7 @@ public class ReservacionesService implements InterfaceReservaciones {
     }
 
     /**
-     * Metodo que obtiene una lista de las reservaciones guardadas en l a base de datos y retorna dicha lista.
+     * Metodo que obtiene una lista de las reservaciones guardadas en la base de datos y retorna dicha lista.
      * 
      */
     @Override

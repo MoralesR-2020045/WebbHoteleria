@@ -1,3 +1,7 @@
+
+<!-- JSP Listar Servicio -->
+
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -8,10 +12,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Método de Pago</title>
         <link rel="icon" type="image/png" href="Assets/Image/iconoHotel.png">
+        
+        <!-- Link para el estilo boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
               crossorigin="anonymous">
 
+        
+       <!-- 
+        Estilo de la cabecera y de la paguina
+       con css.
+        !--> 
         <style>
             .color-titulo {
                 color: #00382b;
@@ -152,6 +163,7 @@
     </head>
 
     <body>
+    <!-- Bara de navegacion de la paguina web, lleva a los links de los demas formularios -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.jsp">
@@ -166,6 +178,7 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     </ul>
                 </div>
+                <!-- Links del resto de formularios echos -->
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
                         <li><a class="nav-link" href="#">Huéspedes</a></li>
@@ -181,6 +194,7 @@
         <br>
         <br>
         <br>
+        <!-- Titular de la paguina web -->
         <div class="container d-flex justify-content-center">
             <h1 class="display-5 text-center color-titulo">Servicios</h1>
         </div>
@@ -190,13 +204,16 @@
                     <table class="table-striped custom-table">
                         <thead>
                             <tr>
+                                <!-- Encabezado de la tabla  con sus estilos y Titulos-->
                                 <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">ID</th>
                                 <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">Servicios</th>
                                 <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">Precio</th>
                             </tr>
                         </thead>
+
+                        <!-- Bucle  que funciona para insertar los datos en una nueva fila -->
                         <tbody>
-                            <c:forEach var="Servicio" items="${Servicio}">
+                              <c:forEach var="Servicio" items="${Servicio}">
                                 <tr>
                                     <td>${Servicio.idServicio}</td>
                                     <td>${Servicio.nombreServicio}</td>
@@ -206,6 +223,8 @@
                         </tbody>
                     </table>
                 </div>
+                
+                <!-- Boton para el formulario de Servicio -->
                 <div class="col-md-4">
                     <a href="./Servicio-JSP/Formulario-Servicio.jsp" class="btn btn-success">
                         Agregar Datos
@@ -217,6 +236,7 @@
             <br>
         </div>
         <br> 
+        <!--Cargar del Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

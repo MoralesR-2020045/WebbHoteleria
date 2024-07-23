@@ -13,6 +13,9 @@ import jakarta.persistence.Id;
 @Entity
 public class Reservaciones {
 
+    /**
+     * Identificador único de la reservación.
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idReserva;
@@ -24,9 +27,15 @@ public class Reservaciones {
     private int idHabitacion;
     private int idServicio;
 
+    /**
+     * Constructor vacio.
+     */
     public Reservaciones() {
     }
 
+    /**
+     * Constructor lleno con todos los parametros.
+     */
     public Reservaciones(int idReserva, String fechaDeIngreso, String fechaDeEgreso, boolean estadoDeDisponibilidad, Double precioTotal, int idHuesped, int idHabitacion, int idServicio) {
         this.idReserva = idReserva;
         this.fechaDeIngreso = fechaDeIngreso;
@@ -38,7 +47,9 @@ public class Reservaciones {
         this.idServicio = idServicio;
     }
 
-    
+    /**
+     * Getters y setter.
+     */
     public int getIdReserva() {
         return idReserva;
     }

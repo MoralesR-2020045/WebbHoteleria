@@ -1,4 +1,3 @@
-
 package com.techtitans.service;
 
 import com.techtitans.model.Reservaciones;
@@ -15,41 +14,43 @@ import java.util.List;
 public class ReservacionesService implements InterfaceReservaciones {
 
     private EntityManager em;
-    
+
     /**
-     * Se inicializa una variable de tipo EntityManager para realizar la persistencia.
+     * Se inicializa una variable de tipo EntityManager para realizar la
+     * persistencia.
      */
-    public ReservacionesService(){
+    public ReservacionesService() {
         this.em = Jpa.getEntityManager();
     }
-    
+
     /**
      * Metodo que se utiliza para agregar un reservacion en la base de datos
-     * 
+     *
      */
     @Override
     public void agregarReservaciones(Reservaciones reserva) {
-         EntityTransaction transction = em.getTransaction();
-        try{
+        EntityTransaction transction = em.getTransaction();
+        try {
             transction.begin();
             em.persist(reserva);
             transction.commit();
-        }catch(Exception e){
-            if(transction.isActive()){
-            transction.rollback();
+        } catch (Exception e) {
+            if (transction.isActive()) {
+                transction.rollback();
             }
-        e.printStackTrace();
+            e.printStackTrace();
         }
     }
 
     /**
-     * Metodo que obtiene una lista de las reservaciones guardadas en la base de datos y retorna dicha lista.
-     * 
+     * Metodo que obtiene una lista de las reservaciones guardadas en la base de
+     * datos y retorna dicha lista.
+     *
      */
     @Override
     public List<Reservaciones> listaReservaciones() {
-       TypedQuery<Reservaciones> query = em.createQuery("select m from Reservaciones  m", Reservaciones.class);
+        TypedQuery<Reservaciones> query = em.createQuery("select m from Reservaciones  m", Reservaciones.class);
         return query.getResultList();
     }
-    
+
 }

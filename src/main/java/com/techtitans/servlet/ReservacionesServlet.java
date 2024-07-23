@@ -19,25 +19,26 @@ import java.util.List;
 @WebServlet(name = "ReservacionesServlet", value = {"/reservaciones-servlet"})
 @MultipartConfig
 public class ReservacionesServlet extends HttpServlet {
-    
+
     private ReservacionesService reservacionesService = new ReservacionesService();
-     /**
-     * Método de inicialización del servlet.
-     * Se ejecuta una vez cuando el servlet es cargado por primera vez.
+
+    /**
+     * Método de inicialización del servlet. Se ejecuta una vez cuando el
+     * servlet es cargado por primera vez.
      */
-    
-     @Override
+
+    @Override
     public void init() throws ServletException {
         super.init();
 
         this.reservacionesService = new ReservacionesService();
     }
-    
+
     /**
-     * Maneja las solicitudes GET.
-     * Obtiene una lista de reservaciones y las envía al JSP para su visualización.
-     **/
-    
+     * Maneja las solicitudes GET. Obtiene una lista de reservaciones y las
+     * envía al JSP para su visualización.
+     *
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Reservaciones> reservas = reservacionesService.listaReservaciones();
@@ -47,20 +48,20 @@ public class ReservacionesServlet extends HttpServlet {
     }
 
     /**
-     * Método privado para agregar una nueva reservación.
-     * Recibe los parámetros de la solicitud, crea un objeto Reservaciones y lo guarda.
-     **/
-    
+     * Método privado para agregar una nueva reservación. Recibe los parámetros
+     * de la solicitud, crea un objeto Reservaciones y lo guarda.
+     *
+     */
     private void agregarReservacion(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = 0;
         String fechaDeIngreso = request.getParameter("fechaDeIngreso");
-            String fechaDeEgreso = request.getParameter("fechaDeEgreso");
-            Boolean estadoDeDisponibilidad = Boolean.parseBoolean(request.getParameter("estadoDeDisponibilidad"));
-            Double precioTotal = Double.parseDouble(request.getParameter("precioTotal"));
-            int idHuesped = Integer.parseInt(request.getParameter("idHuesped"));
-            int idHabitacion = Integer.parseInt(request.getParameter("idHabitacion"));
-            int idServicio = Integer.parseInt(request.getParameter("idServicio"));
-        
+        String fechaDeEgreso = request.getParameter("fechaDeEgreso");
+        Boolean estadoDeDisponibilidad = Boolean.parseBoolean(request.getParameter("estadoDeDisponibilidad"));
+        Double precioTotal = Double.parseDouble(request.getParameter("precioTotal"));
+        int idHuesped = Integer.parseInt(request.getParameter("idHuesped"));
+        int idHabitacion = Integer.parseInt(request.getParameter("idHabitacion"));
+        int idServicio = Integer.parseInt(request.getParameter("idServicio"));
+
         Reservaciones reserva = new Reservaciones(id, fechaDeIngreso, fechaDeEgreso, estadoDeDisponibilidad, precioTotal, idHuesped, idHabitacion, idServicio);
         reservacionesService.agregarReservaciones(reserva);
 
@@ -68,9 +69,10 @@ public class ReservacionesServlet extends HttpServlet {
     }
 
     /**
-     * Maneja las solicitudes POST.
-     * Valida la informacion y en vase a eso llama o no al metodo para agregar una reservacion.
-     * */
+     * Maneja las solicitudes POST. Valida la informacion y en vase a eso llama
+     * o no al metodo para agregar una reservacion.
+     *
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String pathInfo = request.getPathInfo();

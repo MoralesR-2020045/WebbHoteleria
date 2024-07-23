@@ -12,8 +12,16 @@ import java.util.List;
  * @author compu
  */
 public interface InterfaceReservaciones {
-    
-     public void agregarReservaciones(Reservaciones reserva);
-    
+
+    /**
+     * Metod que agrega una nueva reservación.
+     *
+     */
+    public void agregarReservaciones(Reservaciones reserva);
+
+    /**
+     * Devuelve una lista de todas las reservaciones.
+     *
+     */
     public List<Reservaciones> listaReservaciones();
 }

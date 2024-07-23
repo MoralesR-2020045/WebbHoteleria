@@ -120,7 +120,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item" href="#">
-                                <a class="nav-link" href="#">Inicio</a>
+                                <img src="Assets/Image/login.png" alt="Imagen" style="height: 50px; width: auto; margin-left: 10px;">
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#eventos">Eventos</a>
@@ -140,8 +140,8 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formularios</a>
                                 <ul class="dropdown-menu color-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Huï¿½spedes</a></li>
-                                    <li><a class="dropdown-item" href="./metodoDePago-servlet">Lista</a></li>
-                                    <li><a class="dropdown-item" href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" >Mï¿½todo de Pago</a></li>
+                                    <li><a class="dropdown-item" href="./metodoDePago-servlet">Método de Pago</a></li>
+                                    <li><a class="dropdown-item" href="./servicio-servlet">Servicios</a></li>
                                     <li><a class="dropdown-item" href="#">Empleados</a></li>
                                     <li><a class="dropdown-item" href="#">Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>

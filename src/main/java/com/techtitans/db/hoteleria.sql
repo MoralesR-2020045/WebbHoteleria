@@ -91,3 +91,9 @@ create table Pago(
     constraint FK_Pago_Reservaciones
     foreign key (idReserva) references Reservaciones(idReserva)
 );
+
+
+INSERT INTO Servicio (nombreServicio, PrecioServicio)
+VALUES 
+('Limpieza', 50.00),
+('Desayuno', 20.00);

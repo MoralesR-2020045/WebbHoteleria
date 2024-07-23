@@ -42,7 +42,7 @@ create table Empleados(
 create table TipoDeHabitacion(
 	idTipoDeHabitacion int auto_increment,
 	nombreTipoDeHabitacion varchar(60) not null, 
-	descripción text not null , 
+	descripción varchar(45) not null , 
 	capacidad int not null, 
 	tamañoEnMetrosCuadrados varchar(15) not null, 
 	numeroDeCamas int  not null, 

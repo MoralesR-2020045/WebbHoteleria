@@ -18,7 +18,17 @@
                 font-size: 4rem;
             }
 
-
+            body,
+            html {
+                background-image: url('../Assets/Image/imagenFondo.jpeg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 100%;
+                margin: 0;
+                font-family: Glacial Indifference;
+            }
+            
             nav.navbar {
                 background-color: #00382b;
                 border-right: 1px solid #ccc;

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.techtitans.service;
 
 import com.techtitans.model.Reservaciones;
@@ -19,9 +16,17 @@ public class ReservacionesService implements InterfaceReservaciones {
 
     private EntityManager em;
     
+    /**
+     * Se inicializa una variable de tipo EntityManager para realizar la persistencia.
+     */
     public ReservacionesService(){
         this.em = Jpa.getEntityManager();
     }
+    
+    /**
+     * Metodo que se utiliza para agregar un reservacion en la base de datos
+     * 
+     */
     @Override
     public void agregarReservaciones(Reservaciones reserva) {
          EntityTransaction transction = em.getTransaction();
@@ -37,9 +42,13 @@ public class ReservacionesService implements InterfaceReservaciones {
         }
     }
 
+    /**
+     * Metodo que obtiene una lista de las reservaciones guardadas en l a base de datos y retorna dicha lista.
+     * 
+     */
     @Override
     public List<Reservaciones> listaReservaciones() {
-       TypedQuery<Reservaciones> query = em.createQuery("select m from Reservaciones m", Reservaciones.class);
+       TypedQuery<Reservaciones> query = em.createQuery("select m from Reservaciones  m", Reservaciones.class);
         return query.getResultList();
     }
     

@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.techtitans.servlet;
 
 import com.techtitans.model.Reservaciones;
@@ -24,46 +21,56 @@ import java.util.List;
 public class ReservacionesServlet extends HttpServlet {
     
     private ReservacionesService reservacionesService = new ReservacionesService();
+     /**
+     * Método de inicialización del servlet.
+     * Se ejecuta una vez cuando el servlet es cargado por primera vez.
+     */
+    
      @Override
     public void init() throws ServletException {
         super.init();
 
         this.reservacionesService = new ReservacionesService();
     }
-
-    /*
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        List<MetodoDePago> metodo = metodoDePagoService.listaMetodoDePago();
-        metodo.forEach(p -> System.out.println(p));
-        req.setAttribute("MetodoDePago", metodo);
-        req.getRequestDispatcher("./met/Lista-MetodoDePago.jsp").forward(req, resp);
-    }*/
+    
+    /**
+     * Maneja las solicitudes GET.
+     * Obtiene una lista de reservaciones y las envía al JSP para su visualización.
+     **/
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Reservaciones> reservas = reservacionesService.listaReservaciones();
         reservas.forEach(p -> System.out.println(p));
         request.setAttribute("Reservaciones", reservas);
-        request.getRequestDispatcher("/Lista-Reservaciones/listar-Reservaciones.jsp").forward(request, response);
+        request.getRequestDispatcher("/Reservaciones-JSP/Lista-Reservaciones.jsp").forward(request, response);
     }
 
+    /**
+     * Método privado para agregar una nueva reservación.
+     * Recibe los parámetros de la solicitud, crea un objeto Reservaciones y lo guarda.
+     **/
+    
     private void agregarReservacion(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        int idReserva = 0;
+        int id = 0;
         String fechaDeIngreso = request.getParameter("fechaDeIngreso");
-        String fechaDeEgreso = request.getParameter("fechaDeEgreso");
-        Boolean estadoDeDisponibilidad = false;
-        Double precioTotal = 0.00;
-        int idHuesped = 0;
-        int idHabitacion = 0;
-        int idServicio = 0;
+            String fechaDeEgreso = request.getParameter("fechaDeEgreso");
+            Boolean estadoDeDisponibilidad = Boolean.parseBoolean(request.getParameter("estadoDeDisponibilidad"));
+            Double precioTotal = Double.parseDouble(request.getParameter("precioTotal"));
+            int idHuesped = Integer.parseInt(request.getParameter("idHuesped"));
+            int idHabitacion = Integer.parseInt(request.getParameter("idHabitacion"));
+            int idServicio = Integer.parseInt(request.getParameter("idServicio"));
         
-        Reservaciones reserva = new Reservaciones(idReserva, fechaDeIngreso, fechaDeEgreso, estadoDeDisponibilidad, precioTotal, idHuesped, idHabitacion, idServicio);
+        Reservaciones reserva = new Reservaciones(id, fechaDeIngreso, fechaDeEgreso, estadoDeDisponibilidad, precioTotal, idHuesped, idHabitacion, idServicio);
         reservacionesService.agregarReservaciones(reserva);
 
         response.sendRedirect(request.getContextPath() + "/reservaciones-servlet");
     }
 
+    /**
+     * Maneja las solicitudes POST.
+     * Valida la informacion y en vase a eso llama o no al metodo para agregar una reservacion.
+     * */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String pathInfo = request.getPathInfo();

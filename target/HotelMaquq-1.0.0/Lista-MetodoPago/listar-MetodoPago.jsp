@@ -1,17 +1,21 @@
+<!-- JSP Lista Metodo de Pago -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<!-- Indica que se va a utilizar lenguaje java -->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
     <head>
+        <!-- Codificación de caracteres utilizados -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Controla la vista del contenido en distintos moviles-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Método de Pago</title>
         <link rel="icon" type="image/png" href="Assets/Image/iconoHotel.png">
+        <!-- Link de estilos boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
               crossorigin="anonymous">
-
+        <!--Estilos CSS -->
         <style>
             .color-titulo {
                 color: #00382b;
@@ -151,7 +155,9 @@
         </style>
     </head>
 
+    <!-- Cuerpo de la pagina web -->
     <body>
+        <!-- Barra de navegación con los distintos de links de formularios -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.jsp">
@@ -168,11 +174,12 @@
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
+                        <!-- Links que dirigen a los distintos formularios -->
                         <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="#">Servicios</a></li>
+                        <li><a class="nav-link" href="./servicio-servlet">Servicios</a></li>
                         <li><a class="nav-link" href="#">Empleados</a></li>
                         <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="./tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
                         <li><a class="nav-link" href="#">Reservas</a></li>
                     </ul>
                 </div>
@@ -181,6 +188,7 @@
         <br>
         <br>
         <br>
+        <!-- Titulo de la pagina web -->
         <div class="container d-flex justify-content-center">
             <h1 class="display-5 text-center color-titulo">Método de Pago</h1>
         </div>
@@ -190,11 +198,13 @@
                     <table class="table-striped custom-table">
                         <thead>
                             <tr>
+                                <!-- Encabezado de la tabla  -->
                                 <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">ID</th>
                                 <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">Método De Pago</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Bucle para insertar los datos en una nueva fila -->
                             <c:forEach var="MetodoDePago" items="${MetodoDePago}">
                                 <tr>
                                     <td>${MetodoDePago.idMetodoPago}</td>
@@ -205,6 +215,7 @@
                     </table>
                     <br>
                 </div>
+                <!-- Boton que se dirige al formulario metodo de pago -->
                 <div class="col-md-4 mx-auto text-center">
                     <a href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" class="btn btn-success">
                         Agregar Datos
@@ -216,6 +227,7 @@
             <br>
         </div>
         <br> 
+        <!-- Script para cargar Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

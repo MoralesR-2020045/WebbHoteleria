@@ -1,15 +1,20 @@
+<!-- JSP Formulario Metodo de Pago -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<!-- Indica que se va a utilizar lenguaje java -->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
     <head>
+        <!-- Codificación de caracteres utilizados -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Controla la vista del contenido en distintos moviles-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulario de Métodos de Pago</title>
         <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
+        <!-- Link de estilos boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+        <!-- Estilos CSS -->
         <style>
             .color-titulo{
                 color: #00382b;
@@ -125,7 +130,10 @@
             }
         </style>
     </head>
+    
+    <!-- Cuerpo de la pagina -->
     <body> 
+        <!-- Barra de navegación con links que dirigen a los distintos formularios-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.jsp">
@@ -138,13 +146,14 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     </ul>
                 </div>
+                <!--Links que dirigen a distintos formularios -->
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
                         <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="#">Servicios</a></li>
+                        <li><a class="nav-link" href="./servicio-servlet">Servicios</a></li>
                         <li><a class="nav-link" href="#">Empleados</a></li>
                         <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="./tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
                         <li><a class="nav-link" href="#">Reservas</a></li>
                     </ul>
                 </div>
@@ -153,21 +162,26 @@
         <br>
         <br>
         <br>
+        <!-- Titulo de la pagina-->
         <div class="container d-flex justify-content-center">
             <h1 class="display-5 text-center color-titulo">Método de Pago</h1>
         </div>
 
         <div class="container mt-5">
+            <!-- Formulario para agregar metodo de pago del servlet-->
             <form action="../../HotelMaquq/metodoDePago-servlet" method="POST" enctype="multipart/form-data">
                 <div class="form-floating mb-3">
+                    <!-- Label para ingresar la información-->
                     <input type="text" class="form-control" id="nombreDelMetodo" name="nombreDelMetodo" placeholder="">
                     <label for="nombreDelMetodo">Nombre del Método de Pago</label>
                 </div>
                 <div>
+                    <!-- Boton del envio del formulario a la base de datos-->
                     <input class="btn btn-outline-success" style="background-color: #0F5746; color: #58b09b; width: 150px; height: 50px; font-size: 1.2rem;" type="submit" value="Agregar">
                 </div>
             </form>
         </div>
+        <!-- Script para cargar Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

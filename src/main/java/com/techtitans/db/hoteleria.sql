@@ -1,5 +1,5 @@
 
--- Drop database if exists DBHoteleria;
+Drop database if exists DBHoteleria;
 Create database DBHoteleria;
 
 Use DBHoteleria;
@@ -42,13 +42,15 @@ create table Empleados(
 create table TipoDeHabitacion(
 	idTipoDeHabitacion int auto_increment,
 	nombreTipoDeHabitacion varchar(60) not null, 
-	descripción text not null , 
+	descripcion varchar(45) not null , 
 	capacidad int not null, 
 	tamañoEnMetrosCuadrados varchar(15) not null, 
 	numeroDeCamas int  not null, 
 	precioBase decimal(10,2) not null,
     primary key PK_TipoDeHabitacion (idTipoDeHabitacion)
 );
+
+select*from TipoDeHabitacion;
 
 create table Habitaciones(
 	idHabitacion int auto_increment,

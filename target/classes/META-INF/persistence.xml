@@ -4,6 +4,7 @@
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <!-- Reemplaza con tus entidades -->
     <class>org.techtitans.model.MetodoDePago</class>
+    <class>org.techtitans.model.TipoDeHabitacion</class>
     
     
     

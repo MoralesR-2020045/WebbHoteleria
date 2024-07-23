@@ -144,12 +144,14 @@
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="#">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="#">Id</a></li>
+                        <li><a class="nav-link" href="#">NIT</a></li>
+                        <li><a class="nav-link" href="#">DPI</a></li>
+                        <li><a class="nav-link" href="#">Nombre</a></li>
+                        <li><a class="nav-link" href="#">Apellido</a></li>
+                        <li><a class="nav-link" href="#">Email</a></li>
+                        <li><a class="nav-link" href="#">Teléfono</a></li>
+                        <li><a class="nav-link" href="#">Contraseña</a></li>
                     </ul>
                 </div>
             </div>
@@ -166,7 +168,7 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" class="color-menu th">ID</th>
+                                <th scope="col" class="color-menu th">Id</th>
                                 <th scope="col" class="color-menu th">NIT</th>
                                 <th scope="col" class="color-menu th">DPI</th>
                                 <th scope="col" class="color-menu th">Nombre</th>
@@ -177,7 +179,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <c:forEach var="huesped" items="${huespedes}">
+                            <c:forEach var="huespedes" items="${huespedes}">
                                 <tr>
                                     <td>${huesped.idHuesped}</td>
                                     <td>${huesped.nit}</td>
@@ -193,7 +195,7 @@
                     </table>
                 </div>
                 <div class="col-md-4">
-                    <a href="./Huesped-JSP/Formulario-Huesped.jsp" class="btn btn-success">Agregar Datos</a>
+                    <a href="./Huespedes-JSP/Formulario-Huespedes.jsp" class="btn btn-success">Agregar Datos</a>
                 </div>
             </div>
         </div>

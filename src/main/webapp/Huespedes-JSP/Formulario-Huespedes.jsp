@@ -136,7 +136,7 @@
         </div>
 
         <div class="container mt-5">
-            <form action="../../HotelMaquq/huesped-servlet" method="POST" enctype="multipart/form-data">
+            <form action="../../HotelMaquq/huespedes-servlet" method="POST" enctype="multipart/form-data">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="idHuesped" name="idHuesped" placeholder="">
                     <label for="idHuesped">ID Huésped</label>
@@ -171,7 +171,7 @@
                 </div>
                 <div>
                     <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <button class="btn btn-success" type="button" href="./huesped-servlet">Ver Datos</button>
+                    <button class="btn btn-success" type="button" href="./huespedes-servlet">Ver Datos</button>
                 </div>
             </form>
         </div>

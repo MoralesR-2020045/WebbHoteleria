@@ -16,7 +16,10 @@ import java.util.List;
  * @author Carlos Morales
  */
 
-
+/**
+ * en esta clase encontraremos los controladores 
+ * El entity Manager nos permite crear l conexion con la base de datos
+ */
 
 public class TipoDeHabitacionService implements InterfaceTipoDeHabitacionService{
     

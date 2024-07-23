@@ -14,7 +14,13 @@ import jakarta.persistence.Id;
  * @author Carlos Morales
  */
 
-
+/**
+ * En esta clase se definiran los aatributos junto a sus constructores, get y set 
+ * El Entity nos permite identificar que esta clase es una entidad
+ * El Id indica que aqui se usara un identificador (id)
+ * El GeneratedValue nos permite indicarle a JPA que genere el id
+ * EL IDENTiTY nos genera los id en una forma similar a SQL
+*/
 
 @Entity
 public class TipoDeHabitacion {

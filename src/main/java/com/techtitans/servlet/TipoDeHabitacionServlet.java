@@ -31,7 +31,9 @@ public class TipoDeHabitacionServlet extends HttpServlet {
     }
     
     
-  
+/**
+* usamos doGet para solicitar la representacion de los recurso
+*/
     
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
@@ -55,7 +57,9 @@ public class TipoDeHabitacionServlet extends HttpServlet {
         response.sendRedirect(request.getContextPath()+"/tipoDeHabitacion-servlet");
     }
     
-
+/**
+* usamos doPost para enviar los recursos a un punto especifico 
+*/
    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         String pathInfo = request.getPathInfo();

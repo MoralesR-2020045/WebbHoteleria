@@ -144,7 +144,8 @@
                                     <li><a class="dropdown-item" href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" >M�todo de Pago</a></li>
                                     <li><a class="dropdown-item" href="./empleados-servlet">Lista Empleados</a></li>
                                     <li><a class="dropdown-item" href="./EmpleadosFront/Formulario-Empleados.jsp">Empleados</a></li>
-                                    <li><a class="dropdown-item" href="#">Habitaciones</a></li>
+                                    <li><a class="dropdown-item" href="./habitaciones-servlet">Lista Habitaciones</a></li>
+                                    <li><a class="dropdown-item" href="./HabitacionesFront/Formulario-Habitaciones.jsp">Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Reservas</a></li>
                                 </ul>

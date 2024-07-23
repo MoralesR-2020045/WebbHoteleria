@@ -142,8 +142,8 @@
                                     <li><a class="dropdown-item" href="#">Hu�spedes</a></li>
                                     <li><a class="dropdown-item" href="./metodoDePago-servlet">Lista</a></li>
                                     <li><a class="dropdown-item" href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" >M�todo de Pago</a></li>
-                                    <li><a class="dropdown-item" href="#">Empleados</a></li>
-                                    <li><a class="dropdown-item" href="#">Habitaciones</a></li>
+                                <li><a class="dropdown-item" href="./pago-servlet">Empleados</a></li>
+                                    <li><a class="dropdown-item" href="./Pago-JSP/formulario-Pago.jsp">Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Reservas</a></li>
                                 </ul>

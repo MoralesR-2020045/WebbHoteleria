@@ -42,7 +42,7 @@ public class MetodoDePagoServlet extends HttpServlet {
         List<MetodoDePago> metodos = metodoDePagoService.listaMetodoDePago();
         metodos.forEach(p -> System.out.println(p));
         request.setAttribute("MetodoDePago", metodos);
-        request.getRequestDispatcher("/Lista-MetodoPago/listar-MetodoPago.jsp").forward(request, response);
+        request.getRequestDispatcher("/MetodoDePago-JSP/listar-MetodoPago.jsp").forward(request, response);
     }
 
     private void agregarMetodoDePago(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

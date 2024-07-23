@@ -144,7 +144,7 @@
                         <li><a class="nav-link" href="./servicio-servlet">Servicios</a></li>
                         <li><a class="nav-link" href="#">Empleados</a></li>
                         <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="./tipoDeHabitacion-servelt">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="./tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
                         <li><a class="nav-link" href="#">Reservas</a></li>
                     </ul>
                 </div>

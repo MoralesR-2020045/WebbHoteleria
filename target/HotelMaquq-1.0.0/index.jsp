@@ -144,7 +144,7 @@
                                     <li><a class="dropdown-item" href="./servicio-servlet">Servicios</a></li>
                                     <li><a class="dropdown-item" href="#">Empleados</a></li>
                                     <li><a class="dropdown-item" href="#">Habitaciones</a></li>
-                                    <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>
+                                    <li><a class="dropdown-item" href="./tipoDeHabitacion-servlet">Tipo de Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Reservas</a></li>
                                 </ul>
                             </li>

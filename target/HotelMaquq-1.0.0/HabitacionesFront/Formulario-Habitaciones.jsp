@@ -159,13 +159,13 @@
         </div>
 
         <div class="container mt-5">
-            <form action="../../HotelMaquq/empleados-servlet" method="POST" enctype="multipart/form-data">
+            <form action="../../HotelMaquq/habitaciones-servlet" method="POST" enctype="multipart/form-data">
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="numeroHabitacion" name="numeroHabitacion" placeholder="">
                     <label for="nombreDelMetodo">Numero de habitacion</label>
                 </div>
                 <div class="form-floating mb-4">
-                    <input type="text" class="form-control" id="PrecioPorNoche" name="PrecioPorNoche" placeholder="">
+                    <input type="text" class="form-control" id="precioPorNoche" name="precioPorNoche" placeholder="">
                     <label for="nombreDelMetodo">Precio por noche</label>
                 </div>
                 <div class="form-floating mb-5">

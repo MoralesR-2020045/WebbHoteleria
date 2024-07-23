@@ -202,7 +202,7 @@
                                 <tr>
                                     <td>${Habitaciones.idHabitacion}</td>
                                     <td>${Habitaciones.numeroHabitacion}</td>
-                                    <td>${Habitaciones.PrecioPorNoche}</td>
+                                    <td>${Habitaciones.precioPorNoche}</td>
                                     <td>${Habitaciones.idTipoDeHabitacion}</td>
                                 </tr>
                             </c:forEach>

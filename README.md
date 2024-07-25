@@ -7,33 +7,31 @@
 
 # Indice
 1. [Objetivo Del Programa](#objetivo-del-programa)
-2. [Introducción al Manejo del Programa](#introduccion-al-manejo-del-programa)
+2. [Introducción al Manejo del Programa](#introducción-al-manejo-del-programa)
 3. [Descarga del Programa](#descarga-del-programa)
 4. [Funcionalidades](#funcionalidades)
 5. [Posibles Problemas](#posibles-problemas)
-
-
-
+---
+---
 ## Objetivo Del Programa
-
-
-
+---
+---
 ## Introducción al Manejo del Programa
-
-
-
+---
+---
 ## Descarga del Programa
-
-
-
+---
+---
 ## Funcionalidades
 - `Funcionalidad 1`: descripción de la funcionalidad 1
 - - `Funcionalidad 2`: descripción de la funcionalidad 2
 - - `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2
 - - `Funcionalidad 3`: descripción de la funcionalidad 3
-
-
+---
+---
 ## Posibles Problemas
+---
+---
 
 
 

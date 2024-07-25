@@ -1,4 +1,3 @@
-
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -27,7 +26,7 @@
 
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.jpeg');
+                background-image: url('../Assets/Image/imagenFondo.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -131,6 +130,30 @@
             .offcanvas a:hover {
                 text-decoration: underline;
             }
+
+            .datepicker {
+                background-color: #2d8570;
+            }
+
+            .datepicker .datepicker-days td,
+            .datepicker .datepicker-days th {
+                color: #00382b;
+            }
+
+            .datepicker .datepicker-days .active,
+            .datepicker .datepicker-days .active:hover {
+                background-color: #2d8570; 
+                color: #ffffff; 
+            }
+
+            .datepicker .datepicker-days td.disabled {
+                color: #6c757d; 
+            }
+    
+            .datepicker .datepicker-header {
+                background-color: #00382b; 
+                color: #a3c3b8;
+            }
         </style>
     </head>
     <body style="background-color: ivory;"> 
@@ -148,55 +171,54 @@
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="#">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/huespedes-servlet">Huéspedes</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/servicio-Servlet">Servicios</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/empleados-servlet">Empleados</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/habitaciones-servlet">Habitaciones</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/reservaciones-servlet">Reservas</a></li>
                     </ul>
                 </div>
+                                
+
             </div>
         </nav>
         <br>
         <br>
         <br>
         <div class="container d-flex justify-content-center">
-            <h1 class="display-5 text-center color-titulo">Método de Pago</h1>
+            <h1 class="display-5 text-center color-titulo">Pago de Reservación</h1>
         </div>
 
         <div class="container mt-5">
             <form action="../../HotelMaquq/pago-servlet" method="POST" enctype="multipart/form-data">
                 <div class="row g-3">
-                    
+
                     <div class="col-md-7">
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Q</span>
+                            <span class="input-group-text" style="background-color: #a3c3b8;"><strong> Q </strong></span>
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="pagoDeReservacion" name="pagoDeReservacion" placeholder="pagoDeReservacion">
-                                <label for="pagoDeReservacion">Pago De Reservacion</label>
+                                <label for="pagoDeReservacion">Pago De Reservación</label>
                             </div>
                         </div>
                     </div> 
 
-
-
                     <div class="col-md-5">
                         <div class="row form-group g-1">
-                            <label for="date" class="col-sm-4 col-form-label">Fecha de Pago</label>
+                            <label for="date" class="col-sm-4 col-form-label" style="font-size: 1.2rem; color:#00382b;">Fecha de Pago</label>
                             <div class="col-sm-8">
                                 <div class="input-group date" id="fechaDePago">
                                     <input type="text" class="form-control" id="fechaDePago" name="fechaDePago">
                                     <span class="input-group-append">
-                                        <span class="input-group-text bg-white">
-                                            <i class="fa fa-calendar"></i>
+                                        <span class="input-group-text bg-red">
+                                            <i class="fa fa-calendar" style="color: #00382b; background-color: #a3c3b8;"></i>
                                         </span>
                                     </span>
                                 </div>
                             </div>
                         </div>
                     </div>
-
                     <script type="text/javascript">
                         $(function () {
                             $('#fechaDePago').datepicker({
@@ -207,34 +229,32 @@
                             });
                         });
                     </script>
-
-                    <div class="input-group mb-4">
-                        <span class="input-group-text">Q</span>
+                    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" style="background-color: #a3c3b8;"><img src="../Assets/Image/iconoPago.png" alt="Imagen Método" style="width: 30px;"></span>
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="saldoRestante" name="saldoRestante" placeholder="saldoRestante">
-                            <label for="saldoRestante">Pago Restante </label>
+                            <input type="text" class="form-control" id="idMetodoPago" name="idMetodoPago" placeholder="">
+                            <label for="idMetodoPago">ID Método Pago</label>
                         </div>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="idMetodoPago" name="idMetodoPago" placeholder="">
-                        <label for="idMetodoPago">Nombre del Método de Pago</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" style="background-color: #a3c3b8;"><img src="../Assets/Image/iconoReserva.png" alt="Imagen Reserva" style="width: 30px;"></span>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="idReserva" name="idReserva" placeholder="">
+                            <label for="idReserva">ID Reserva</label>
+                        </div>
                     </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="idReserva" name="idReserva" placeholder="">
-                        <label for="idReserva">Nombre del Método de Pago</label>
-                    </div>
-
-
                 </div>
-
                 <div>
-                    <div class="d-flex justify-content-center mt-4">
-                        <input class="btn btn-outline-success me-4" type="submit" value="Agregar">
-                        <button class="btn btn-success  me-4" type="button" href="./pago-servlet">Ver Datos</button>
+                    <div>
+                        <!-- Boton del envio del formulario a la base de datos-->
+                        <input class="btn btn-success" style="background-color: #0F5746; color: #ffffff; width: 150px; height: 50px; font-size: 1.2rem;" type="submit" value="Agregar">
                     </div>
                 </div>
-
             </form>
+            <br>
+            <br>
+            <br>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>

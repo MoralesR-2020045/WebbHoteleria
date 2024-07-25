@@ -28,10 +28,10 @@
                 color: #00382b;
                 font-size: 4rem;
             }
-
+            
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.jpeg');
+                background-image: url('./Assets/Image/imagenFondo.jpeg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -39,6 +39,7 @@
                 margin: 0;
                 font-family: Glacial Indifference;
             }
+
             
             nav.navbar {
                 background-color: #00382b;
@@ -181,12 +182,12 @@
                 <!-- Links del resto de formularios echos -->
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="./servicio-servlet">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="./tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/huespedes-servlet">Huéspedes</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/servicio-Servlet">Servicios</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/empleados-servlet">Empleados</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/habitaciones-servlet">Habitaciones</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/reservaciones-servlet">Reservas</a></li>
                     </ul>
                 </div>
             </div>
@@ -222,11 +223,12 @@
                             </c:forEach>
                         </tbody>
                     </table>
+                    <br>
                 </div>
                 
                 <!-- Boton para el formulario de Servicio -->
-                <div class="col-md-4">
-                    <a href="./Servicio-JSP/Formulario-Servicio.jsp" class="btn btn-success">
+                <div class="col-md-4 mx-auto text-center">
+                    <a href="./Formulario-Servicio/Formulario-Servicio.jsp" class="btn btn-success">
                         Agregar Datos
                     </a>
                     <br>

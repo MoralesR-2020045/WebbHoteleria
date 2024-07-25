@@ -1,26 +1,30 @@
+<!-- JSP Lista Empleados -->
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<!-- Indica que se va a utilizar lenguaje java -->
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 
     <head>
+        <!-- Codificación de caracteres utilizados -->
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Controla la vista del contenido en distintos moviles-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Empleados</title>
-        <link rel="icon" type="image/png" href="Assets/Image/iconoHotel.png">
+        <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
+        <!-- Link de estilos boostrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
               crossorigin="anonymous">
-
+        <!--Estilos CSS -->
         <style>
             .color-titulo {
                 color: #00382b;
                 font-size: 4rem;
             }
-
+            
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.png');
+                background-image: url('./Assets/Image/imagenFondo.jpeg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -149,14 +153,14 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             }
         </style>
-
     </head>
-
+    <!-- Cuerpo de la pagina web -->
     <body>
+        <!-- Barra de navegación-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.jsp">
-                    <img src="<c:url value='/Assets/Image/logo.png' />" alt="Imagen Logo" style="height: 150px; width: 200px">
+                <a class="navbar-brand" href="index.jsp">
+                    <img src="Assets/Image/logo.png" alt="Imagen Logo" style="height: 150px; width: 200px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -167,14 +171,15 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     </ul>
                 </div>
+                <!-- Barra de navegación que dirige a distintos formularios-->
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="#">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/huespedes-servlet">Huéspedes</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/servicio-Servlet">Servicios</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/empleados-servlet">Empleados</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/habitaciones-servlet">Habitaciones</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/reservaciones-servlet">Reservas</a></li>
                     </ul>
                 </div>
             </div>
@@ -182,22 +187,25 @@
         <br>
         <br>
         <br>
+        <!-- Titulo de la pagina web -->
         <div class="container d-flex justify-content-center">
             <h1 class="display-5 text-center color-titulo">Empleados</h1>
         </div>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-8">
-                    <table class="table">
+                <div class="col-md-8.5 mx-auto">
+                    <table class="table-striped custom-table">
                         <thead>
                             <tr>
-                                <th scope="col" class="color-menu th">ID</th>
-                                <th scope="col" class="color-menu th">Nombre</th>
-                                <th scope="col" class="color-menu th">Apellido</th>
-                                <th scope="col" class="color-menu th">Contraseña</th>
+                                <!-- Encabezado de la tabla -->
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">ID</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">Nombre</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">Apellido</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">Contraseña</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <!-- Bucle para insertar los datos en una nueva fila -->
                             <c:forEach var="Empleados" items="${Empleados}">
                                 <tr>
                                     <td>${Empleados.idEmpleado}</td>
@@ -208,15 +216,21 @@
                             </c:forEach>
                         </tbody>
                     </table>
+                    <br>
                 </div>
-                <div class="col-md-4">
+                <!-- Boton que se dirige al formulario Empleados -->
+                <div class="col-md-4 mx-auto text-center">
                     <a href="./EmpleadosFront/Formulario-Empleados.jsp" class="btn btn-success">
                         Agregar Datos
                     </a>
+                    <br>
                 </div>
+                <br>
             </div>
+            <br>
         </div>
-
+        <br> 
+        <!-- Script para cargar Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

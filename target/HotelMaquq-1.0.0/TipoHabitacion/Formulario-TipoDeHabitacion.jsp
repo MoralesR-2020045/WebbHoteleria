@@ -146,14 +146,13 @@
                     </ul>
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
-                    <!-- Barra de navegacion que dirige a distintos formularios-->
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="./servicio-servlet">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="./metodoDePago-servlet">Método de Pago</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/huespedes-servlet">Huéspedes</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/servicio-Servlet">Servicios</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/empleados-servlet">Empleados</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/habitaciones-servlet">Habitaciones</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/metodoDePago-servlet">Metodo de Pago</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/reservaciones-servlet">Reservas</a></li>
                     </ul>
                 </div>
             </div>
@@ -220,8 +219,8 @@
                     </div>
                 </div>
                 <!-- Boton del envio del Formulario -->
-                <div>
-                    <input class="btn btn-outline-success" style="background-color: #0F5746; color: #58b09b; width: 150px; height: 50px; font-size: 1.2rem;" type="submit" value="Agregar">
+                <div>            
+                    <input class="btn btn-outline-success" style="background-color: #0F5746; color: #ffffff; width: 150px; height: 50px; font-size: 1.2rem;" type="submit" value="Agregar">
                 </div>
                 <br>
                 <br>

@@ -175,12 +175,12 @@
                 <!-- Barra de navegación que dirige a distintos formularios-->
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="./servicio-servlet">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="./metodoDePago-servlet">Método de Pago</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/huespedes-servlet">Huéspedes</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/servicio-Servlet">Servicios</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/empleados-servlet">Empleados</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/habitaciones-servlet">Habitaciones</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/metodoDePago-servlet">Metodo de Pago</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/reservaciones-servlet">Reservas</a></li>
                     </ul>
                 </div>
             </div>
@@ -227,7 +227,7 @@
                 </div>
                 <!-- Boton que se dirige al formulario metodo de pago -->
                 <div class="col-md-4 mx-auto text-center">
-                    <a href="./MetodoDePago-JSP/Formulario-TipoDeHabitacion.jsp" class="btn btn-success">
+                    <a href="./TipoHabitacion/Formulario-TipoDeHabitacion.jsp" class="btn btn-success">
                         Agregar Datos
                     </a>
                     <br>

@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author Donovan Morales
  */
-public interface InterfacePago {
+public interface InterfacePago  {
     
     
     public void agregarPago(Pago pago);

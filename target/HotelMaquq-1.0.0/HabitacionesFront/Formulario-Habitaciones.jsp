@@ -18,7 +18,7 @@
 
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.png');
+                background-image: url('../Assets/Image/imagenFondo.jpeg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -124,7 +124,6 @@
                 text-decoration: underline;
             }
         </style>
-
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg">
@@ -141,12 +140,12 @@
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="#">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/huespedes-servlet">Huéspedes</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/servicio-Servlet">Servicios</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/empleados-servlet">Empleados</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/habitaciones-servlet">Habitaciones</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/reservaciones-servlet">Reservas</a></li>
                     </ul>
                 </div>
             </div>
@@ -172,9 +171,8 @@
                     <input type="text" class="form-control" id="idTipoDeHabitacion" name="idTipoDeHabitacion" placeholder="">
                     <label for="nombreDelMetodo">Numero del tipo de habitacion</label>
                 </div>
-                <div>
-                    <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <button class="btn btn-success" type="button" href="./habitaciones-servlet">Ver Datos</button>
+                <div>            
+                    <input class="btn btn-outline-success" style="background-color: #0F5746; color: #ffffff; width: 150px; height: 50px; font-size: 1.2rem;" type="submit" value="Agregar">
                 </div>
             </form>
         </div>

@@ -20,7 +20,7 @@
 
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.png');
+                background-image: url('./Assets/Image/imagenFondo.jpeg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -154,8 +154,8 @@
     <body>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.jsp">
-                    <img src="../Assets/Image/logo.png" alt="Imagen Logo" style="height: 150px; width: 200px">
+                <a class="navbar-brand" href="index.jsp">
+                    <img src="Assets/Image/logo.png" alt="Imagen Logo" style="height: 150px; width: 200px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -168,12 +168,12 @@
                 </div>
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
-                        <li><a class="nav-link" href="#">Servicios</a></li>
-                        <li><a class="nav-link" href="#">Empleados</a></li>
-                        <li><a class="nav-link" href="#">Habitaciones</a></li>
-                        <li><a class="nav-link" href="#">Tipo de Habitación</a></li>
-                        <li><a class="nav-link" href="#">Reservas</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/huespedes-servlet">Huéspedes</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/servicio-Servlet">Servicios</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/empleados-servlet">Empleados</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/habitaciones-servlet">Habitaciones</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/tipoDeHabitacion-servlet">Tipo de Habitación</a></li>
+                        <li><a class="nav-link" href="../../HotelMaquq/reservaciones-servlet">Reservas</a></li>
                     </ul>
                 </div>
             </div>
@@ -190,8 +190,8 @@
                     <table class="table-striped custom-table">
                         <thead>
                             <tr>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;">ID</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;">Método De Pago</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">ID</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;">Método De Pago</th>
                             </tr>
                         </thead>
                         <tbody>

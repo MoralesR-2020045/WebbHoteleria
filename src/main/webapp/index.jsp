@@ -142,7 +142,7 @@
                                     <li><a class="dropdown-item" href="./Huespedes-JSP/Formulario-Huespedes.jsp">Huéspedes</a></li>
                                     <li><a class="dropdown-item" href="./huespedes-servlet">Lista Huéspedes</a></li>
                                     <li><a class="dropdown-item" href="./metodoDePago-servlet">Lista</a></li>
-                                    <li><a class="dropdown-item" href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" >Método de Pago</a></li>
+                                    <li><a class="dropdown-item" href="./Lista-MetodoPago/Formulario-MetodoDePago.jsp" >Método de Pago</a></li>
                                     <li><a class="dropdown-item" href="#">Empleados</a></li>
                                     <li><a class="dropdown-item" href="#">Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>

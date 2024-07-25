@@ -123,7 +123,7 @@
                 <!-- Este es el menú desplegable -->
                 <div id="myOffcanvas" class="offcanvas">
                     <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#">Huéspedes</a></li>
+                        <li><a class="nav-link" href="#">Método de Pago</a></li>
                         <li><a class="nav-link" href="#">Servicios</a></li>
                         <li><a class="nav-link" href="#">Empleados</a></li>
                         <li><a class="nav-link" href="#">Habitaciones</a></li>
@@ -142,8 +142,6 @@
         <div class="container mt-5">
             <form action="../../HotelMaquq/huespedes-servlet" method="POST" enctype="multipart/form-data">
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="idHuesped" name="idHuesped" placeholder="">
-                    <label for="idHuesped">ID Huésped</label>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="nit" name="nit" placeholder="">
@@ -175,7 +173,6 @@
                 </div>
                 <div>
                     <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <a href="" class="btn btn-success">Ver Datos</a>
                 </div>
             </form>
         </div> 

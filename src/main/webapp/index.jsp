@@ -136,7 +136,7 @@
                                 <a class="nav-link" href="#eventos">Eventos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#Ubicacion">Ubicaciï¿½n</a>
+                                <a class="nav-link" href="#Ubicacion">Ubicación</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">
@@ -198,7 +198,7 @@
         <!-- Sección información del Hotel -->
         <section class="section">
             <div class="text">
-                <h2 class="color-titulos">Hotel Corazï¿½n del Mundo Maya</h2>
+                <h2 class="color-titulos">Hotel Corazón del Mundo Maya</h2>
                 <p>Hotel Maquq es un oasis de lujo y confort en el corazï¿½n de Guatemala, en donde enriquezemos la
                     cultura gutemalteca, ofreciendo una experiencia ï¿½nica para aquellos que buscan un alojamiento 
                     excepcional. Nuestro hotel combina la calidez de la hospitalidad guatemalteca con 
@@ -236,7 +236,7 @@
                     <script>
                     document.addEventListener('DOMContentLoaded', function () {
                         <!-- Lista de las Imagenes a mostrar -->
-                        const images = ['imagenHotel5.jpeg', 'imagenHotel6.jpeg', 'imagenHotel7.jpeg']; // Lista de nombres de imï¿½genes
+                        const images = ['imagenHotel5.jpeg', 'imagenHotel6.jpeg', 'imagenHotel7.jpeg']; 
                         let currentImageIndex = 0;
                         const interval = 3000;
                         <!-- Imagen a mostrar despues de 5 segundos-->
@@ -251,7 +251,7 @@
             </div>
             <div class="text">
                 <h2 class="color-titulos">Restaurante</h2>
-                <p>Nuestro restaurante en el Hotel Maquq celebra la rica diversidad culinaria de Guatemala, ofreciendo platos tradicionales elaborados con ingredientes frescos y locales. Los huï¿½spedes pueden disfrutar de una experiencia gastronï¿½mica ï¿½nica en un ambiente elegante y acogedor, complementado por un servicio excepcional y una cuidada selecciï¿½n de vinos y cï¿½cteles.</p>
+                <p>Nuestro restaurante en el Hotel Maquq celebra la rica diversidad culinaria de Guatemala, ofreciendo platos tradicionales elaborados con ingredientes frescos y locales. Los huï¿½spedes pueden disfrutar de una experiencia gastronomica unica en un ambiente elegante y acogedor, complementado por un servicio excepcional y una cuidada seleccion de vinos y cocteles.</p>
             </div>
         </section>
 
@@ -259,7 +259,7 @@
         <section class="section" id="servicios">
             <div class="text">
                 <h2 class="color-titulos">Servicios y Comodidades</h2>
-                <p>Nuestros servicios y comodidades estï¿½n diseï¿½ados para satisfacer las necesidades y superar las expectativas de nuestros huï¿½spedes. Desde habitaciones lujosas y bien equipadas hasta un spa rejuvenecedor y espacios para eventos versï¿½tiles, en el Hotel Maquq encontrarï¿½s todo lo necesario para una estadï¿½a cï¿½moda y placentera.</p>
+                <p>Nuestros servicios y comodidades estan diseñados para satisfacer las necesidades y superar las expectativas de nuestros huesspedes. Desde habitaciones lujosas y bien equipadas hasta un spa rejuvenecedor y espacios para eventos versï¿½tiles, en el Hotel Maquq encontraras todo lo necesario para una estadia comoda y placentera.</p>
                 <div class="square-button .btn-cambio-color">
                     <a href="./servicio-servlet" class="btn btn-primary btn-lg">Ver más</a>
                 </div>

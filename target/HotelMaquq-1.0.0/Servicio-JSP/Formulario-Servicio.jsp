@@ -1,28 +1,34 @@
 
 <!-- JSP Formularios Servicio !-->
 
+       <!-- 
+        Autor: Samuel Alexander Perez Cap.
+        Carnet: 2020493
+        Fecha: 25/07/2024
+       !--> 
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
     <head>
-       <!-- 
-        Importe de la boblioteca JSTL
-        !--> 
+        <!-- 
+         Importe de la boblioteca JSTL
+         !--> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Formulario de Métodos de Pago</title>
         <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
-        
+
         <!-- Link para el estilo boostrap -->
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-       <!-- 
-        Estilo de la cabecera y de la paguina
-       con css.
-        !--> 
+        <!-- 
+         Estilo de la cabecera y de la paguina
+        con css.
+         !--> 
         <style>
             .color-titulo{
                 color: #00382b;
@@ -31,7 +37,7 @@
 
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.jpeg');
+                background-image: url('../Assets/Image/imagenFondo.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -139,9 +145,9 @@
         </style>
     </head>
 
-
+    <!-- Cuerpo de la paguina web -->
     <body> 
-    <!-- Bara de navegacion de la paguina web, lleva a los links de los demas formularios -->
+        <!-- Bara de navegacion de la paguina web, lleva a los links de los demas formularios -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.jsp">
@@ -176,27 +182,32 @@
         </div>
 
         <!-- Inicio del formulario de la paguina web -->
-           <div class="container mt-5">
-            <form action="../../HotelMaquq/servicio-servlet" method="POST" enctype="multipart/form-data">
+        <div class="container mt-5 d-flex justify-content-center align-items-center">
+            <form action="../../HotelMaquq/servicio-Servlet" method="POST" enctype="multipart/form-data">
                 <!-- Lebel para la poder ingresar la informacion de EL NOMBRE DEL SERVICIO -->
-                <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="nombreDelServicio" name="nombreDelServicio" placeholder="">
-                    <label for="nombreDelServicio">Nombre del Servicio</label>
-                    <br>
+                <div class="row">
+                    <div class="col-md-50">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nombreDelServicio" name="nombreDelServicio" placeholder="">
+                            <label for="nombreDelServicio">Nombre del Servicio</label>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-floating mb-3">
-                <!-- Lebel para la poder ingresar la informacion del Precio del servicio -->
-                    <input type="text" class="form-control" id="PrecioDelServicio" name="PrecioDelServicio" placeholder="">
-                    <label for="PrecioDelServicio">Precio</label>
+                <div class="col-md-20"> 
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" style="background-color: #a3c3b8;">Q</span>
+                        <div class="form-floating">
+                            <!-- Lebel para la poder ingresar la informacion del Precio del servicio -->
+                            <input type="text" class="form-control" id="PrecioDelServicio" name="PrecioDelServicio" placeholder="">
+                            <label for="PrecioDelServicio">Precio</label>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                <!-- Botones para enviar y ver los datos enviados -->
-                    <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <button class="btn btn-success" type="button" href="./servicio-servlet">Ver Datos</button>
+                <div class="d-flex justify-content-center">
+                    <input class="btn btn-outline-success" style="background-color: #0F5746; color: #58b09b; width: 150px; height: 50px; font-size: 1.2rem;" type="submit" value="Agregar">
                 </div>
             </form>
         </div>
-        <!--Cargar del Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

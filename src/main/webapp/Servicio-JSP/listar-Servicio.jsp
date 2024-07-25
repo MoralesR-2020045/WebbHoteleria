@@ -1,6 +1,11 @@
 
 <!-- JSP Listar Servicio -->
 
+       <!-- 
+        Autor: Samuel Alexander Perez Cap.
+        Carnet: 2020493
+        Fecha: 25/07/2024
+       !--> 
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -31,7 +36,7 @@
 
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.jpeg');
+                background-image: url('Assets/Image/imagenFondo.png');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -162,6 +167,7 @@
         </style>
     </head>
 
+    <!-- Cuerpo de la paguina web -->
     <body>
     <!-- Bara de navegacion de la paguina web, lleva a los links de los demas formularios -->
         <nav class="navbar navbar-expand-lg">
@@ -222,11 +228,12 @@
                             </c:forEach>
                         </tbody>
                     </table>
+                    <br>
                 </div>
                 
                 <!-- Boton para el formulario de Servicio -->
-                <div class="col-md-4">
-                    <a href="./Servicio-JSP/Formulario-Servicio.jsp" class="btn btn-success">
+                <div class="col-md-4 mx-auto text-center">
+                    <a href="./Formulario-Servicio/Formulario-Servicio.jsp" class="btn btn-success">
                         Agregar Datos
                     </a>
                     <br>

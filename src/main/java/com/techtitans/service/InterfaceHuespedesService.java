@@ -11,6 +11,7 @@ import java.util.List;
  *
  * @author Marco Bolaños
  */
+
 // Clase Interfaz Huespedes Servicio
 public interface InterfaceHuespedesService {
 

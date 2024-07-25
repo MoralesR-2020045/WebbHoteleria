@@ -24,7 +24,7 @@
 
             body,
             html {
-                background-image: url('Assets/Image/imagenFondo.png');
+                background-image: url('Assets/Image/imagenFondo.jpeg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -93,7 +93,7 @@
             }
 
             .th-header img {
-                margin-right: 5px; 
+                margin-right: 5px;
             }
 
             .td-content {
@@ -157,7 +157,7 @@
             }
 
             .table-striped tbody tr:nth-child(even) {
-                background-color: #a3c3b8 !important;
+                background-color: #a3c3b8  !important;
             }
 
             .custom-table {
@@ -168,17 +168,18 @@
                 overflow: hidden;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             }
-        </style>
+        </style>    
     </head>
+
     <body>
-        <!-- Este es el inicio de la barra de la navegación -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.jsp">
-                    <!-- Este es el logo del hotel -->
-                    <img src="./Assets/Image/iconoHotel.png" alt="Imagen Logo" style="height: 150px; width: 200px">
+                    <img src="./Assets/Image/logo.png" alt="Imagen Logo" style="height: 150px; width: 200px">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -198,30 +199,27 @@
                 </div>
             </div>
         </nav>
-        <!-- Este es un espacio para separación -->
         <br>
         <br>
         <br>
-        <!-- Este es el título de la página -->
         <div class="container d-flex justify-content-center">
-            <h1 class="display-5 text-center color-titulo">Listado de Huéspedes</h1>
+            <h1 class="display-5 text-center color-titulo">Listado Huéspedes</h1>
         </div>
-        <!-- Tabla de huéspedes -->
         <div class="container mt-5">
             <div class="row">
                 <div class="col-md-8.5 mx-auto">
-                    <table class="table table-striped">
+                    <table class="table-striped custom-table">
                         <thead>
                             <tr>
                                 <!-- Estos son los encabezados de la tabla -->
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/idHuesped.png">ID</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/nitHuesped.png">NIT</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/dpiHuesped.png">DPI</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/nombreHuesped.png">Nombre</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/apellidosHuesped.png">Apellido</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/email.png">Email</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/telefono.png">Teléfono</th>
-                                <th scope="col" class="th-header" style="background-color: #00382b; color: #ffffff;"><img src="./Assets/Image/contraseña.png">Contraseña</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;;"><img src="Assets/Image/idHuesped.png">ID</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;"><img src="Assets/Image/nitHuesped.png">NIT</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;"><img src="./Assets/Image/dpiHuesped.png">DPI</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;"><img src="./Assets/Image/nombreHuesped.png">Nombre</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;"><img src="./Assets/Image/apellidosHuesped.png">Apellidos</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;"><img src="./Assets/Image/emailHuesped.png">Email</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;"><img src="./Assets/Image/telefonoHuesped.png">Teléfono</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;"><img src="./Assets/Image/contraseñaHuesped.png">Contraseña</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -239,16 +237,22 @@
                                 </tr>
                             </c:forEach>
                         </tbody>
-
                     </table>
+                    <br>
                 </div>
-                <div class="col-md-4">
-                    <!-- Este botón hace dirección a "Formulario-Huespedes" para agregar nuevos datos -->
-                    <a href="./Huespedes-JSP/Formulario-Huespedes.jsp" class="btn btn-success">Agregar Datos</a>
+                <div class="col-md-4 mx-auto text-center">
+                    <a href="./Huespedes-JSP/Formulario-Huespedes.jsp" class="btn btn-success">
+                        Agregar Datos
+                    </a>
+                    <br>
                 </div>
+                <br>
             </div>
+            <br>
         </div>
-        <!-- Enlace que envía a los scripts de Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <br> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     </body>
 </html>

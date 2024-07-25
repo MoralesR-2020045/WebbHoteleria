@@ -2,7 +2,7 @@
 <img src="https://github.com/user-attachments/assets/91aa1d8f-ee7b-480a-9401-83bdbea97584" alt="Página Principal" width="300" height="200">
 
 
-# WebbHoteleria 🏨
+# Hoteleria Webb 🏨
 
 
 ## Indice

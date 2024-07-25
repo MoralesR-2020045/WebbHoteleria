@@ -145,7 +145,8 @@
                                     <li><a class="dropdown-item" href="#">Empleados</a></li>
                                     <li><a class="dropdown-item" href="#">Habitaciones</a></li>
                                     <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>
-                                    <li><a class="dropdown-item" href="#">Reservas</a></li>
+                                    <li><a class="dropdown-item" href="./Reservaciones-JSP/Lista-Reservaciones.jsp">Reservas Lista</a></li>
+                                    <li><a class="dropdown-item" href="./Reservaciones-JSP/Formulario-Reservaciones.jsp">Reservas</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">

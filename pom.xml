@@ -69,8 +69,8 @@
                 <version>2.2</version>
                 <configuration>
                     <url>http://localhost:8080/manager/text</url>
-                    <username>root</username>
-                    <password>1</password>
+                    <username>ema22</username>
+                    <password>ema22</password>
                 </configuration>
             </plugin>
         </plugins>

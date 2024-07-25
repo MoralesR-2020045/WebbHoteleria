@@ -28,11 +28,10 @@ public class TipoDeHabitacionServlet extends HttpServlet {
         super.init();
         
         this.tipoDeHabitacionService = new TipoDeHabitacionService();
-    }
-    
+    }  
     
 /**
-* usamos doGet para solicitar la representacion de los recurso
+* usamos doGet para solicitar la representacion de los recursos
 */
     
     @Override

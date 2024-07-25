@@ -12,13 +12,18 @@
 4. [Funcionalidades](#funcionalidades)
 5. [Posibles Problemas](#posibles-problemas)
 
+
+
 ## Objetivo Del Programa
+
 
 
 ## Introducción al Manejo del Programa
 
 
+
 ## Descarga del Programa
+
 
 
 ## Funcionalidades

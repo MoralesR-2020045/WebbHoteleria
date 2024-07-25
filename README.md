@@ -8,8 +8,8 @@
 
 ## Indice
 1. [Objetivo Del Programa](#objetivo-del-programa)
-2. [Introducción al Manejo del Programa](#introducción-al-manejo-del-programa)
-3. [Descarga del Programa](#descarga-del-programa)
+2. [Descarga del Programa](#descarga-del-programa)
+3. [Introducción al Manejo del Programa](#introducción-al-manejo-del-programa)
 4. [Funcionalidades](#funcionalidades)
 5. [Posibles Problemas](#posibles-problemas)
 ---
@@ -23,7 +23,7 @@ La comodidad del usuario al registrarse y poder llenar los formularios es la par
 
 ## 📌Descarga del Programa
 
-Opcion 1: Descarga desde Git Hub (Debe estar en la rama main) .
+- Opcion 1: Descarga desde Git Hub (Debe estar en la rama main) .
  
 1. - Dirija el cursor hacia el pequeño cuadro verde que dice [< > Code ].
 2. - Presione una vez para desplegar el menú para su descarga.
@@ -35,7 +35,7 @@ Opcion 1: Descarga desde Git Hub (Debe estar en la rama main) .
 
 ---
 
-Opción 2: Descargar del Repositorio con git (Debe estar en la rama main).
+- Opción 2: Descargar del Repositorio con git (Debe estar en la rama main).
 
 1. - Dirija el cursor hacia el pequeño cuadro verde que dice [< > Code ].
 2. - Presione una vez para desplegar el menú para su descarga.
@@ -59,6 +59,25 @@ Opción 2: Descargar del Repositorio con git (Debe estar en la rama main).
 
 ---
 ## 🛠Introducción al Manejo del Programa
+
+- Navegacion del Programa
+
+El programa se rije por el index el cual es la página principal del hotel, una barra de navegación que funciona para ver los distintos servicios e información de lo que ofrece el hotel, también
+al mismo tiempo en este apartado se encuentra el acceso a los diferentes formularios para los clientes que quieran registrarse como huéspedes en el hotel.
+También hay formularios para que los administradores puedan ingresar nuevo personal y nuevos servicios al hotel.
+
+<img src="https://github.com/user-attachments/assets/d7ae471c-14e8-4e9f-80cc-b7bbc5cde6cb" alt="Ejemplo 2" width="800" height="400">
+
+- Navegación por los Formularios y Listas
+
+En el pequeño menú que se encuentra en el index hasta la parte de arriba se encuentra un pequeño apartado el cual se llama formularios, al presionarlo se despliega un pequeño menú
+con los formularios, al presionar uno de estos este nos redirige a la vista de listar en la cual se presentan los datos ingresados por el cliente o el administrador.
+En la vista de listar también se presenta la opción para agregar más datos, al presionarlo nos llevara al apartado del formulario correspondiente de la lista para que pueda ser llenado por completo y agregarlo a la lista que guarda sus datos en una base de datos echa en MysQL. 
+
+<img src="[https://github.com/user-attachments/assets/d7ae471c-14e8-4e9f-80cc-b7bbc5cde6cb](https://github.com/user-attachments/assets/22575f02-8b68-4111-abad-0d98e954def6)" alt="Ejemplo 2" width="800" height="400">
+
+<img src="https://github.com/user-attachments/assets/d7ae471c-14e8-4e9f-80cc-b7bbc5cde6cb" alt="Ejemplo 2" width="800" height="400">
+
 
 ---
 ## 🔨Funcionalidades

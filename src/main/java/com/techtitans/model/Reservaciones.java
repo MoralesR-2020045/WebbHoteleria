@@ -1,14 +1,15 @@
-
 package com.techtitans.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import java.sql.Date;
+import java.time.LocalDate;
 
 /**
  *
- * @author compu
+ * @author Daniel Sacol
  */
 @Entity
 public class Reservaciones {
@@ -19,8 +20,8 @@ public class Reservaciones {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idReserva;
-    private String fechaDeIngreso;
-    private String fechaDeEgreso;
+    private Date fechaDeIngreso;
+    private Date fechaDeEgreso;
     private boolean estadoDeDisponibilidad;
     private Double precioTotal;
     private int idHuesped;
@@ -36,7 +37,7 @@ public class Reservaciones {
     /**
      * Constructor lleno con todos los parametros.
      */
-    public Reservaciones(int idReserva, String fechaDeIngreso, String fechaDeEgreso, boolean estadoDeDisponibilidad, Double precioTotal, int idHuesped, int idHabitacion, int idServicio) {
+    public Reservaciones(int idReserva, Date fechaDeIngreso, Date fechaDeEgreso, boolean estadoDeDisponibilidad, Double precioTotal, int idHuesped, int idHabitacion, int idServicio) {
         this.idReserva = idReserva;
         this.fechaDeIngreso = fechaDeIngreso;
         this.fechaDeEgreso = fechaDeEgreso;
@@ -50,6 +51,7 @@ public class Reservaciones {
     /**
      * Getters y setter.
      */
+
     public int getIdReserva() {
         return idReserva;
     }
@@ -58,19 +60,19 @@ public class Reservaciones {
         this.idReserva = idReserva;
     }
 
-    public String getFechaDeIngreso() {
+    public Date getFechaDeIngreso() {
         return fechaDeIngreso;
     }
 
-    public void setFechaDeIngreso(String fechaDeIngreso) {
+    public void setFechaDeIngreso(Date fechaDeIngreso) {
         this.fechaDeIngreso = fechaDeIngreso;
     }
 
-    public String getFechaDeEgreso() {
+    public Date getFechaDeEgreso() {
         return fechaDeEgreso;
     }
 
-    public void setFechaDeEgreso(String fechaDeEgreso) {
+    public void setFechaDeEgreso(Date fechaDeEgreso) {
         this.fechaDeEgreso = fechaDeEgreso;
     }
 

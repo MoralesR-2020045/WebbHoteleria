@@ -10,6 +10,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Date;
 import java.util.List;
 
 /**
@@ -54,8 +55,8 @@ public class ReservacionesServlet extends HttpServlet {
      */
     private void agregarReservacion(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int id = 0;
-        String fechaDeIngreso = request.getParameter("fechaDeIngreso");
-        String fechaDeEgreso = request.getParameter("fechaDeEgreso");
+        Date fechaDeIngreso = Date.valueOf(request.getParameter("fechaDeIngreso"));
+        Date fechaDeEgreso = Date.valueOf(request.getParameter("fechaDeEgreso"));
         Boolean estadoDeDisponibilidad = Boolean.parseBoolean(request.getParameter("estadoDeDisponibilidad"));
         Double precioTotal = Double.parseDouble(request.getParameter("precioTotal"));
         int idHuesped = Integer.parseInt(request.getParameter("idHuesped"));

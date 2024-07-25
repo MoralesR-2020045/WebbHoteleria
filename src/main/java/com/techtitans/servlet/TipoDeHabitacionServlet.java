@@ -31,7 +31,7 @@ public class TipoDeHabitacionServlet extends HttpServlet {
     }  
     
 /**
-* usamos doGet para solicitar la representacion de los recursos
+* Usamos doGet para solicitar la representacion de los recursos
 */
     
     @Override
@@ -57,7 +57,7 @@ public class TipoDeHabitacionServlet extends HttpServlet {
     }
     
 /**
-* usamos doPost para enviar los recursos a un punto especifico 
+* Usamos doPost para enviar los recursos a un punto especifico 
 */
    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{

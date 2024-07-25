@@ -15,10 +15,10 @@
                 color: #00382b;
                 font-size: 4rem;
             }
-
+            
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.png');
+                background-image: url('../Assets/Image/imagenFondo.jpeg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -124,7 +124,6 @@
                 text-decoration: underline;
             }
         </style>
-
     </head>
     <body> 
         <nav class="navbar navbar-expand-lg">
@@ -174,7 +173,7 @@
                 </div>
                 <div>
                     <input class="btn btn-outline-success" type="submit" value="Agregar">
-                    <button class="btn btn-success" type="button" href="./habitaciones-servlet">Ver Datos</button>
+                    
                 </div>
             </form>
         </div>

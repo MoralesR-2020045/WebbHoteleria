@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Empleados</title>
-        <link rel="icon" type="image/png" href="Assets/Image/iconoHotel.png">
+        <link rel="icon" type="image/png" href="../Assets/Image/iconoHotel.png">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
               crossorigin="anonymous">
@@ -20,7 +20,7 @@
 
             body,
             html {
-                background-image: url('../Assets/Image/imagenFondo.png');
+                background-image: url('../Assets/Image/imagenFondo.jpeg');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-attachment: fixed;
@@ -149,14 +149,13 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             }
         </style>
-
     </head>
 
     <body>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.jsp">
-                    <img src="<c:url value='/Assets/Image/logo.png' />" alt="Imagen Logo" style="height: 150px; width: 200px">
+                    <img src="../Assets/Image/logo.png" alt="Imagen Logo" style="height: 150px; width: 200px">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -187,14 +186,14 @@
         </div>
         <div class="container mt-5">
             <div class="row">
-                <div class="col-md-8">
-                    <table class="table">
+                <div class="col-md-8.5 mx-auto">
+                    <table class="table-striped custom-table">
                         <thead>
                             <tr>
-                                <th scope="col" class="color-menu th">ID</th>
-                                <th scope="col" class="color-menu th">Nombre</th>
-                                <th scope="col" class="color-menu th">Apellido</th>
-                                <th scope="col" class="color-menu th">Contraseña</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;">ID</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;">Nombre</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;">Apellido</th>
+                                <th scope="col" class="th-header" style="background-color: #00382b; color: #2d8570;">Contraseña</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -208,15 +207,19 @@
                             </c:forEach>
                         </tbody>
                     </table>
+                    <br>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 mx-auto text-center">
                     <a href="./EmpleadosFront/Formulario-Empleados.jsp" class="btn btn-success">
                         Agregar Datos
                     </a>
+                    <br>
                 </div>
+                <br>
             </div>
+            <br>
         </div>
-
+        <br> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

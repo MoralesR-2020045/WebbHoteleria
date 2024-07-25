@@ -9,11 +9,15 @@ import java.util.List;
 
 /**
  *
- * @author gaber
+ * @author Diego Bercian
  */
 public interface InterfaceHabitacionesService {
     
+    
+    // Metodo para agregar Habitaciones
     public void agregarHabitaciones(Habitaciones metodo);
+    
+    // Metodo para listar habitaciones
     
     public List<Habitaciones> listaHabitaciones();
     

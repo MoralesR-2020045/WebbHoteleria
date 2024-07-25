@@ -9,18 +9,35 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+
+// @author Diego Bercian
+
 @Entity
 public class Habitaciones {
+    
+    /*
+        Declaración de variables
+    */
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idHabitacion;
     private String numeroHabitacion;
     private Double precioPorNoche;
     private int idTipoDeHabitacion;
+    
+    /*
+        Metodo
+   
+    */
 
     public Habitaciones() {
         
     }
+    
+    /*
+        Sobrecargar el metodo
+    */
 
     public Habitaciones(int idHabitacion, String numeroHabitacion, Double precioPorNoche, int idTipoDeHabitacion) {
         this.idHabitacion = idHabitacion;
@@ -28,6 +45,10 @@ public class Habitaciones {
         this.precioPorNoche = precioPorNoche;
         this.idTipoDeHabitacion = idTipoDeHabitacion;
     }
+    
+    /*
+        Getters y Setters
+    */
 
     public int getIdHabitacion() {
         return idHabitacion;

@@ -11,15 +11,20 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.TypedQuery;
 import java.util.List;
 
+// @author Diego Bercian
 
 public class EmpleadosService implements InterfaceEmpleadosService{
     
     private EntityManager em;
 
+    /*Método para el Jpa */
+    
     public EmpleadosService() {
         em = Jpa.getEntityManager();
     }
 
+    /* Metodo para agregar Empleados */
+    
     @Override
     public void agregarEmpleados(Empleados metodo) {
       EntityTransaction transction = em.getTransaction();
@@ -36,6 +41,8 @@ public class EmpleadosService implements InterfaceEmpleadosService{
         
     }
 
+    /* Metodo para listar empleados*/
+    
     @Override
     public List<Empleados> listaEmpleados(){
             TypedQuery<Empleados> query = em.createQuery("SELECT p FROM Empleados p", Empleados.class);

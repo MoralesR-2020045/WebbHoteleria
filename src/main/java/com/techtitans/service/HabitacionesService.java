@@ -11,18 +11,20 @@ import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.TypedQuery;
 import java.util.List;
 
-/**
- *
- * @author gaber
- */
+// @author Diego Bercian
+
 public class HabitacionesService implements InterfaceHabitacionesService{
  
      private EntityManager em;
 
+     /* Metodo para el jpa */
+     
     public HabitacionesService() {
         em = Jpa.getEntityManager();
     }
 
+    /* Metodo para agregar habitaciones */
+    
     @Override
     public void agregarHabitaciones(Habitaciones metodo) {
       EntityTransaction transction = em.getTransaction();
@@ -39,6 +41,8 @@ public class HabitacionesService implements InterfaceHabitacionesService{
         
     }
 
+    /* Metodo para listar habitaciones*/
+    
     @Override
     public List<Habitaciones> listaHabitaciones(){
             TypedQuery<Habitaciones> query = em.createQuery("select p from Habitaciones p", Habitaciones.class);

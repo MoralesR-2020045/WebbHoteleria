@@ -7,10 +7,17 @@ package com.techtitans.service;
 import com.techtitans.model.Empleados;
 import java.util.List;
 
+// @author Diego Bercian
 
 public interface InterfaceEmpleadosService {
     
+    /*
+       Metodo agregar Empleados
+    */
+    
     public void agregarEmpleados(Empleados metodo);
+    
+    /* Metodo para listar */
     
     public List<Empleados> listaEmpleados();
     

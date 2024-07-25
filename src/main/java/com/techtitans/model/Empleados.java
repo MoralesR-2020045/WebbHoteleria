@@ -10,23 +10,32 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-/**
- *
- * @author gaber
- */
+// @author Diego Bercian
 
 @Entity
 public class Empleados {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    
+    /*
+        Declaración de variables
+    */
     private int idEmpleado;
     private String nombreEmpleado;
     private String apellidoEmpleado;
     private String contraseña;
 
+    /*
+        Metodo Empleados
+    */
+    
     public Empleados() {
         
     }
+    
+    /*
+        Sobrecargar el método
+    */
 
     public Empleados(int idEmpleado, String nombreEmpleado, String apellidoEmpleado, String contraseña) {
         this.idEmpleado = idEmpleado;
@@ -35,6 +44,9 @@ public class Empleados {
         this.contraseña = contraseña;
     }
 
+    /*
+        Getters y Setters
+    */
     public int getIdEmpleado() {
         return idEmpleado;
     }

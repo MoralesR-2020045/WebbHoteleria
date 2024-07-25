@@ -15,6 +15,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
+// @author Diego Bercian
+
 
 @WebServlet(name = "EmpleadosServlet", value = {"/empleados-servlet"})
 @MultipartConfig
@@ -30,13 +32,18 @@ public class EmpleadosServlet extends HttpServlet{
     }
 
     
+    /* Metodo goGet*/
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Empleados> metodos = empleadosService.listaEmpleados();
         metodos.forEach(p -> System.out.println(p));
         request.setAttribute("Empleados", metodos);
+        // linea de conexion al jsp
         request.getRequestDispatcher("/EmpleadosFront/Lista-Empleados.jsp").forward(request, response);
     }
+    
+   /* Agregar un empleado */
 
     private void agregarEmpleado(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int idEmpleado = 0;
@@ -50,6 +57,8 @@ public class EmpleadosServlet extends HttpServlet{
         response.sendRedirect(request.getContextPath() + "/empleados-servlet");
     }
 
+     /* Metodo doPost */
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String pathInfo = request.getPathInfo();

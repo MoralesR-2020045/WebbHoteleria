@@ -15,10 +15,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-/**
- *
- * @author gaber
- */
+// @author Diego Bercian
 
 @WebServlet(name = "HabitacionesServlet", value = {"/habitaciones-servlet"})
 @MultipartConfig
@@ -34,11 +31,14 @@ public class HabitacionesServlet extends HttpServlet {
     }
 
     
+    /* Metodo to get*/
+    
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Habitaciones> metodos = habitacionesService.listaHabitaciones();
         metodos.forEach(p -> System.out.println(p));
         request.setAttribute("Habitaciones", metodos);
+        // Linea de conexion al jsp
         request.getRequestDispatcher("/HabitacionesFront/Lista-Habitaciones.jsp").forward(request, response);
     }
 
@@ -54,6 +54,8 @@ public class HabitacionesServlet extends HttpServlet {
         response.sendRedirect(request.getContextPath() + "/empleados-servlet");
     }
 
+     /* Metodo doPost */
+    
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String pathInfo = request.getPathInfo();

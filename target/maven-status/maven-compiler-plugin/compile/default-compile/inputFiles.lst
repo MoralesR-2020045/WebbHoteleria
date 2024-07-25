@@ -1,5 +1,37 @@
-C:\Users\Donovan Morales\Desktop\proyectHotel\HotelMaquq\src\main\java\com\techtitans\service\InterfaceMetodoDePagoService.java
-C:\Users\Donovan Morales\Desktop\proyectHotel\HotelMaquq\src\main\java\com\techtitans\model\MetodoDePago.java
-C:\Users\Donovan Morales\Desktop\proyectHotel\HotelMaquq\src\main\java\com\techtitans\service\MetodoDePagoService.java
-C:\Users\Donovan Morales\Desktop\proyectHotel\HotelMaquq\src\main\java\com\techtitans\util\Jpa.java
-C:\Users\Donovan Morales\Desktop\proyectHotel\HotelMaquq\src\main\java\com\techtitans\servlet\MetodoDePagoServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\ReservacionesServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\MetodoDePago.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\HabitacionesServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\HuespedesServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\HuespedesService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceHuespedes.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\PagoService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\Huespedes.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\Servicio.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\LoginService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\util\Jpa.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\Pago.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceReservaciones.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\Empleados.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\HabitacionesService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\ServicioServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceHuespedesService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceEmpleados.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceServicio.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\TipoDeHabitacion.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\EmpleadosService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\ReservacionesService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceTipoDeHabitacionService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\EmpleadosServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceMetodoDePago.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\TipoDeHabitacionService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfacePago.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceLogin.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\Reservaciones.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\MetodoDePagoServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\TipoDeHabitacionServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\model\Habitaciones.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\MetodoDePagoService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\ServicioService.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\LoginServlet.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\service\InterfaceHabitaciones.java
+C:\Users\Donovan Morales\Desktop\clone Hoteleria\WebbHoteleria\src\main\java\com\techtitans\servlet\PagoServlet.java

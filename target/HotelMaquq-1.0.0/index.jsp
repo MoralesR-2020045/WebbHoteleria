@@ -139,13 +139,14 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Formularios</a>
                                 <ul class="dropdown-menu color-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Huï¿½spedes</a></li>
-                                    <li><a class="dropdown-item" href="./metodoDePago-servlet">Lista</a></li>
-                                    <li><a class="dropdown-item" href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" >Mï¿½todo de Pago</a></li>
-                                    <li><a class="dropdown-item" href="#">Empleados</a></li>
-                                    <li><a class="dropdown-item" href="#">Habitaciones</a></li>
-                                    <li><a class="dropdown-item" href="#">Tipo de Habitaciones</a></li>
-                                    <li><a class="dropdown-item" href="#">Reservas</a></li>
+                                    <li><a class="dropdown-item" href="./huespedes-servlet">Huéspedes</a></li>
+                                    <li><a class="dropdown-item" href="./servicio-Servlet">Servicio</a></li>
+                                    <li><a class="dropdown-item" href="./metodoDePago-servlet" >Método de Pago</a></li>
+                                <li><a class="dropdown-item" href="./pago-servlet">Pago</a></li>
+                                    <li><a class="dropdown-item" href="./tipoDeHabitacion-servlet">Tipo De Habitaciones</a></li>
+                                    <li><a class="dropdown-item" href="./habitaciones-servlet">Habitaciones </a></li>
+                                    <li><a class="dropdown-item" href="./reservaciones-servlet">Reservaciones</a></li>
+                                    <li><a class="dropdown-item" href="./empleados-servlet">Empleados</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">

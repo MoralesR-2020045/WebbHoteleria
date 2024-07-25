@@ -11,6 +11,8 @@
 3. [Introducción al Manejo y Navegacion del Programa](#introducción-al-manejo-y-navegacion-del-programa)
 4. [Funcionalidades](#funcionalidades)
 5. [Posibles Problemas](#posibles-problemas)
+6. [Desarrolladores](#desarrolladores)
+
 ---
 ### 🔍 Objetivo Del Programa.
 
@@ -123,19 +125,19 @@ En la vista de listar también se presenta la opción para agregar más datos, a
 
 ---
 
-## Autores
+## Desarrolladores
 | [<img src="https://github.com/user-attachments/assets/be6f0c1b-d881-4737-951a-513d6fbd51c3" width=115><br><sub>Ramiro Dónovan López</sub>](https://github.com/MoralesR-2020045) | [<img src="https://github.com/user-attachments/assets/c4b950af-a834-482b-9053-cb6b7023f108" width=115><br><sub>Debyn Tubac</sub>](https://github.com/DevynTubac47) | [<img src="https://github.com/user-attachments/assets/ebbb945f-a8cd-4e24-8b7a-eac51c8fffaa" width=115><br><sub>Samuel Perez</sub>](https://github.com/sperez-2020493) |
 | :---: | :---: | :---: |
 
 | [<img src="https://github.com/user-attachments/assets/45c676dd-a4ed-4edc-be87-8445d1539993" width=115><br><sub>Becian Perez</sub>](https://github.com/Dabp7) | [<img src="https://github.com/user-attachments/assets/c9955f20-f45b-466b-b8c1-e8876548837b" width=115><br><sub>Emanuel Lopez</sub>](https://github.com/jlopez-2020385) | [<img src="https://github.com/user-attachments/assets/8376e664-ac09-4cdd-bf79-3a7fc57d023d" width=115><br><sub>Fredy Farcia</sub>](https://github.com/FGarcia012) |
 | :---: | :---: | :---: |
 
-| [<img src="https://github.com/user-attachments/assets/56d2b41a-4f08-4f11-93cf-e8cfc2067695" width=115><br><sub>Daniel Tuy</sub>](https://github.com/danitt030) | [<img src="https://github.com/user-attachments/assets/b09ea600-d491-42d7-88d3-81d41043a840" width=115><br><sub>Daniel Sacolc</sub>](https://github.com/zzzDanielzzz) | [<img src="https://github.com/user-attachments/assets/a0c96c81-3ecd-4655-903d-51641de1ae64" width=115><br><sub>Carlos Morales</sub>](https://github.com/CarlosMorales-2021365) |
+| [<img src="https://github.com/user-attachments/assets/56d2b41a-4f08-4f11-93cf-e8cfc2067695" width=115><br><sub>Daniel Tuy</sub>](https://github.com/danitt030) | [<img src="https://github.com/user-attachments/assets/b09ea600-d491-42d7-88d3-81d41043a840" width=115><br><sub>Daniel Sacol</sub>](https://github.com/zzzDanielzzz) | [<img src="https://github.com/user-attachments/assets/a0c96c81-3ecd-4655-903d-51641de1ae64" width=115><br><sub>Carlos Morales</sub>](https://github.com/CarlosMorales-2021365) |
 | :---: | :---: | :---: |
 
-| [<img src="https://github.com/user-attachments/assets/be6f0c1b-d881-4737-951a-513d6fbd51c3" width=115><br><sub>Ramiro Dónovan López</sub>](https://github.com/MoralesR-2020045) | [<img src="https://github.com/user-attachments/assets/c4b950af-a834-482b-9053-cb6b7023f108" width=115><br><sub>Debyn Tubac</sub>](https://github.com/DevynTubac47) ||
+| [<img src="https://github.com/user-attachments/assets/7d75f986-67f5-45cd-a8c5-1038c67c26dc" width=115><br><sub>Brayan Toyon</sub>](https://github.com/Bryanth87) | [<img src="https://github.com/user-attachments/assets/843c6852-d9e5-4691-aabb-25085da55b2c" width=115><br><sub>Marco Bolaños</sub>](https://github.com/PXXxBADBOYxXXP) ||
 | :---: | :---: | :---: |
 
 
-![image](https://github.com/user-attachments/assets/a0c96c81-3ecd-4655-903d-51641de1ae64)
+
 

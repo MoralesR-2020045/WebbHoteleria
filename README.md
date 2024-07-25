@@ -3,17 +3,16 @@
 
 
 # WebbHoteleria 🏨
----
 
 
 ## Indice
 1. [Objetivo Del Programa](#objetivo-del-programa)
 2. [Descarga del Programa](#descarga-del-programa)
-3. [Introducción al Manejo del Programa](#introducción-al-manejo-del-programa)
+3. [Introducción al Manejo y Navegacion del Programa](#introducción-al-manejo-y-navegacion-del-programa)
 4. [Funcionalidades](#funcionalidades)
 5. [Posibles Problemas](#posibles-problemas)
 ---
-### 🔍 Objetivo Del Programa
+### 🔍 Objetivo Del Programa.
 
 El objetivo del Programa web es facilitar el registro de los próximos huéspedes con distintas funcionalidades para hacer más fácil y accesible el registro de los clientes, el manejo web de la aplicación permite agilizar que los clientes puedan registrarse, asignar los servicios que quieren, proporcionar al hotel su método de pago al hotel, poder reservar su habitación de los distintos tipos que hay y finalmente pagar su cuenta final.
 
@@ -21,7 +20,7 @@ La comodidad del usuario al registrarse y poder llenar los formularios es la par
 
 ---
 
-## 📌Descarga del Programa
+## 📌Descarga del Programa.
 
 - Opcion 1: Descarga desde Git Hub (Debe estar en la rama main) .
  
@@ -49,7 +48,7 @@ La comodidad del usuario al registrarse y poder llenar los formularios es la par
 6. - Diríjase a la barra de la dirección de la carpeta.
 7. - Borre la dirección y escriba cmd y presione ENTER.
    
-<img src="https://github.com/user-attachments/assets/88073573-02b7-4723-bfd6-8369d830c19b" alt="Ejemplo 2" width="800" height="400">
+<img src="https://github.com/user-attachments/assets/88073573-02b7-4723-bfd6-8369d830c19b" alt="Ejemplo 3" width="800" height="400">
 
 8. -  Al abrirse la ventana de cmd escriba el siguiente comando *git clone: * y pegue el enlace del repositorio que copio anterior mente.
 9. - Presione ENTER y espere que termine la clonación del archivo.
@@ -58,7 +57,7 @@ La comodidad del usuario al registrarse y poder llenar los formularios es la par
 
 
 ---
-## 🛠Introducción al Manejo del Programa
+## 🛠Introducción al Manejo y Navegacion del Programa.
 
 - Navegacion del Programa
 
@@ -66,30 +65,65 @@ El programa se rije por el index el cual es la página principal del hotel, una 
 al mismo tiempo en este apartado se encuentra el acceso a los diferentes formularios para los clientes que quieran registrarse como huéspedes en el hotel.
 También hay formularios para que los administradores puedan ingresar nuevo personal y nuevos servicios al hotel.
 
-<img src="https://github.com/user-attachments/assets/d7ae471c-14e8-4e9f-80cc-b7bbc5cde6cb" alt="Ejemplo 2" width="800" height="400">
+<img src="https://github.com/user-attachments/assets/d7ae471c-14e8-4e9f-80cc-b7bbc5cde6cb" alt="Ejemplo 4" width="800" height="400">
 
-- Navegación por los Formularios y Listas
+---
+
+- Navegación y manejo en los Formularios y Listas
 
 En el pequeño menú que se encuentra en el index hasta la parte de arriba se encuentra un pequeño apartado el cual se llama formularios, al presionarlo se despliega un pequeño menú
 con los formularios, al presionar uno de estos este nos redirige a la vista de listar en la cual se presentan los datos ingresados por el cliente o el administrador.
 En la vista de listar también se presenta la opción para agregar más datos, al presionarlo nos llevara al apartado del formulario correspondiente de la lista para que pueda ser llenado por completo y agregarlo a la lista que guarda sus datos en una base de datos echa en MysQL. 
 
-<img src="[https://github.com/user-attachments/assets/d7ae471c-14e8-4e9f-80cc-b7bbc5cde6cb](https://github.com/user-attachments/assets/22575f02-8b68-4111-abad-0d98e954def6)" alt="Ejemplo 2" width="800" height="400">
+<img src="https://github.com/user-attachments/assets/d9dc0119-6b7e-4e41-9c83-77dc1f1ff2dc" alt="Ejemplo 5" width="800" height="400">
 
-<img src="https://github.com/user-attachments/assets/d7ae471c-14e8-4e9f-80cc-b7bbc5cde6cb" alt="Ejemplo 2" width="800" height="400">
-
-
----
-## 🔨Funcionalidades
-- - `Funcionalidad 1`: descripción de la funcionalidad 1
-- - `Funcionalidad 2`: descripción de la funcionalidad 2
-- - `Funcionalidad 2a`: descripción de la funcionalidade 2a relacionada con la funcionalidad 2
-- - `Funcionalidad 3`: descripción de la funcionalidad 3
+<img src="https://github.com/user-attachments/assets/386b2a85-a70e-4493-bbf3-08cafa0cc000" alt="Ejemplo 6" width="800" height="400">
 
 ---
-## ⚙Posibles Problemas
+## 🔨Funcionalidades.
+- `Funcionalidad 1`: Listar
+  #Presente en las Siguientes Entidades.
+ 
+ - - Huéspedes.
+ - - Servicio.
+ - - MetodoDePago.
+ - - Empleados.
+ - - TipoDeHabitacion.
+ - - Habitaciones.
+ - - Habitaciones.
+ - - Pago.
+     
+- `Funcionalidad 2`: Agregar Datos
+  #Presente en las Siguientes Entidades.
+
+ - - Huéspedes.
+ - - Servicio.
+ - - MetodoDePago.
+ - - Empleados.
+ - - TipoDeHabitacion.
+ - - Habitaciones.
+ - - Habitaciones.
+ - - Pago.
+     
+---
+## ⚙Posibles Problemas.
+- Ingreso incorrecto de los campos solicitados
+ 
+- - Ingreso de caracteres con campos equivocados o incompatibles:
+    El ingreso de datos en los campos equivocados o incompatible puede generar un error en la parte del código del programa web que maneja la lógica del programa, provocando que el formulario no pueda ser recibido
+    y registrado por la base de datos por la incompatibilidad de los datos.
+    Se recomienda que se lean los campos de los datos solicitados antes de ser rellenados y enviados para evitar este problema en los formularios y así no tener conflictos con los servelet de la clase que sea el formulario. 
+
+- - Campos vacíos en los distintos campos de ingreso de Datos:
+    Dejar campos sin rellenar en los distintos formularios del programa puede provocar errores de información nula y de Excepciones de información, ya que la parte de la lógica al recibir
+    estos campos vacíos este empieza a tener conflictos con el registro, lo cual provoca la falla al intentar registrar la información en la base de datos para después ser impresa en la lista de la dicha clase.
+
+    Se recomienda que el usuario o cliente para evitar este error verifique si falta algún campo por rellenar.
+
+<img src="https://github.com/user-attachments/assets/1cbf0c5a-d1ff-4803-8af2-179ad70435c6" alt="Ejemplo 7" width="800" height="400">
 
 ---
+
 
 
 

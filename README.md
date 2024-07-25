@@ -18,7 +18,7 @@ El objetivo del Programa web es facilitar el registro de los próximos huéspede
 
 La comodidad del usuario al registrarse y poder llenar los formularios es la parte más importante del programa web, es por eso que ese está construido de manera que el cliente pueda navegar de la manera más rápida y pueda informarse de todo lo que ofrece el hotel desde la página principal y luego poder acceder de manera rápida desde la barra de navegación a cada formulario para su registro.
 
----
+***
 
 ## 📌Descarga del Programa.
 
@@ -50,7 +50,7 @@ La comodidad del usuario al registrarse y poder llenar los formularios es la par
    
 <img src="https://github.com/user-attachments/assets/88073573-02b7-4723-bfd6-8369d830c19b" alt="Ejemplo 3" width="800" height="400">
 
-8. -  Al abrirse la ventana de cmd escriba el siguiente comando *git clone: * y pegue el enlace del repositorio que copio anterior mente.
+8. -  Al abrirse la ventana de cmd escriba el siguiente comando *git clone* y pegue el enlace del repositorio que copio anterior mente.
 9. - Presione ENTER y espere que termine la clonación del archivo.
 10. - Por ultimo abra Apache NetBeans 22.
 11. - Abra la Carpeta donde está el proyecto y ejecútelo.  
@@ -104,7 +104,6 @@ En la vista de listar también se presenta la opción para agregar más datos, a
  - - Habitaciones.
  - - Habitaciones.
  - - Pago.
-     
 ---
 ## ⚙Posibles Problemas.
 - Ingreso incorrecto de los campos solicitados
@@ -124,7 +123,19 @@ En la vista de listar también se presenta la opción para agregar más datos, a
 
 ---
 
+## Autores
+| [<img src="https://github.com/user-attachments/assets/be6f0c1b-d881-4737-951a-513d6fbd51c3" width=115><br><sub>Ramiro Dónovan López</sub>](https://github.com/MoralesR-2020045) | [<img src="https://github.com/user-attachments/assets/c4b950af-a834-482b-9053-cb6b7023f108" width=115><br><sub>Debyn Tubac</sub>](https://github.com/DevynTubac47) | [<img src="https://github.com/user-attachments/assets/ebbb945f-a8cd-4e24-8b7a-eac51c8fffaa" width=115><br><sub>Samuel Perez</sub>](https://github.com/sperez-2020493) |
+| :---: | :---: | :---: |
+
+| [<img src="https://github.com/user-attachments/assets/45c676dd-a4ed-4edc-be87-8445d1539993" width=115><br><sub>Becian Perez</sub>](https://github.com/Dabp7) | [<img src="https://github.com/user-attachments/assets/c9955f20-f45b-466b-b8c1-e8876548837b" width=115><br><sub>Emanuel Lopez</sub>](https://github.com/jlopez-2020385) | [<img src="https://github.com/user-attachments/assets/8376e664-ac09-4cdd-bf79-3a7fc57d023d" width=115><br><sub>Fredy Farcia</sub>](https://github.com/FGarcia012) |
+| :---: | :---: | :---: |
+
+| [<img src="https://github.com/user-attachments/assets/56d2b41a-4f08-4f11-93cf-e8cfc2067695" width=115><br><sub>Daniel Tuy</sub>](https://github.com/danitt030) | [<img src="https://github.com/user-attachments/assets/b09ea600-d491-42d7-88d3-81d41043a840" width=115><br><sub>Daniel Sacolc</sub>](https://github.com/zzzDanielzzz) | [<img src="https://github.com/user-attachments/assets/a0c96c81-3ecd-4655-903d-51641de1ae64" width=115><br><sub>Carlos Morales</sub>](https://github.com/CarlosMorales-2021365) |
+| :---: | :---: | :---: |
+
+| [<img src="https://github.com/user-attachments/assets/be6f0c1b-d881-4737-951a-513d6fbd51c3" width=115><br><sub>Ramiro Dónovan López</sub>](https://github.com/MoralesR-2020045) | [<img src="https://github.com/user-attachments/assets/c4b950af-a834-482b-9053-cb6b7023f108" width=115><br><sub>Debyn Tubac</sub>](https://github.com/DevynTubac47) ||
+| :---: | :---: | :---: |
 
 
-
+![image](https://github.com/user-attachments/assets/a0c96c81-3ecd-4655-903d-51641de1ae64)
 

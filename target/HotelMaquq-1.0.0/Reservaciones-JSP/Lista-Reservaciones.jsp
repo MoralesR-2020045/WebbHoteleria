@@ -3,7 +3,7 @@
     Created on : 22/07/2024, 19:17:53
     Author     : HP
 --%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -24,10 +24,13 @@
 
         body,
         html {
-            background-color: white;
-            height: 100%;
-            margin: 0;
-            font-family: Glacial Indifference;
+            background-image: url('Image/cc.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                height: 100%;
+                margin: 0;
+                font-family: Glacial Indifference;
         }
 
         nav.navbar {
@@ -128,7 +131,7 @@
         }
 
         .custom-table {
-            width: 160%;
+            width: 150%;
             margin: auto;
             border: 1px solid #00382b;
             border-radius: 15px;
@@ -149,7 +152,6 @@
             text-align: center;
             font-size: 1.2rem;
             padding: 10px;
-            background-color: #00382b;
             color: #ffffff;
         }
 
@@ -198,14 +200,14 @@
                 <table class="table table-striped custom-table">
                     <thead>
                         <tr>
-                            <th scope="col" class="th-header">ID</th>
-                            <th scope="col" class="th-header">Fecha De Ingreso</th>
-                            <th scope="col" class="th-header">Fecha De Egreso</th>
-                            <th scope="col" class="th-header">Estado De Disponibilidad</th>
-                            <th scope="col" class="th-header">Precio Total</th>
-                            <th scope="col" class="th-header">ID Huesped</th>
-                            <th scope="col" class="th-header">ID Habitacion</th>
-                            <th scope="col" class="th-header">ID Servicio</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">ID</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">Fecha De Ingreso</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">Fecha De Egreso</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">Estado De Disponibilidad</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">Precio Total</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">ID Huesped</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">ID Habitacion</th>
+                            <th scope="col" style="background-color: #00382b; color: white;">ID Servicio</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -227,10 +229,9 @@
                 <br>
             </div>
 
-
         </div>
         <div class="col-md-4">
-            <a href="./Reservaciones-JSP/Formulario-Reservaciones.jsp" class="btn btn-success">
+            <a href="./MetodoDePago-JSP/Formulario-MetodoDePago.jsp" class="btn btn-success">
                 Agregar Datos
             </a>
         </div>

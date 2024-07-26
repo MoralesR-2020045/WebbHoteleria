@@ -2,6 +2,7 @@ com\techtitans\service\InterfaceHuespedes.class
 com\techtitans\service\InterfacePago.class
 com\techtitans\servlet\MetodoDePagoServlet.class
 com\techtitans\service\MetodoDePagoService.class
+com\techtitans\service\NewClass.class
 com\techtitans\service\InterfaceHuespedesService.class
 com\techtitans\model\MetodoDePago.class
 com\techtitans\servlet\ServicioServlet.class
@@ -16,7 +17,6 @@ com\techtitans\servlet\PagoServlet.class
 com\techtitans\util\Jpa.class
 com\techtitans\service\ReservacionesService.class
 com\techtitans\service\HuespedesService.class
-com\techtitans\servlet\LoginServlet.class
 com\techtitans\service\InterfaceMetodoDePago.class
 com\techtitans\servlet\EmpleadosServlet.class
 com\techtitans\servlet\TipoDeHabitacionServlet.class
